@@ -36,19 +36,9 @@ python相关库：
 
 1、Mysql数据库的新闻表设计
 
-![image-20211107195613586](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20211107195613586.png)
-
 2、新闻前台的前端demo以及相关路由实现
-
-<img src="C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20211107195752877.png" alt="image-20211107195752877" style="zoom:50%;" />
-
-
 
 3、新闻后台的前端demo
 
-<img src="C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20211107195717799.png" alt="image-20211107195717799" style="zoom:50%;" />
-
 4、实现新增，修改和删除功能
-
-<img src="C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20211109203617019.png" alt="image-20211109203617019" style="zoom:50%;" />
 
