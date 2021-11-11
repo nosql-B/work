@@ -41,7 +41,7 @@ class News(db.Model):
 @app.route("/")
 def index():
     """新闻首页"""
-    news_list = News.query.all()
+    news_list = News.query.filter_by(is_valid=True)
     return render_template("index.html", news_list=news_list)
 
 
@@ -65,7 +65,7 @@ def admin(page=None):
     """ 后台管理首页 """
     if page is None:  # 如果没有传这个参数,默认为第一页
         page = 1
-    page_data = News.query.paginate(page=page, per_page=5)
+    page_data = News.query.filter_by(is_valid=True).paginate(page=page, per_page=5)
     return render_template("admin/index.html", page_data=page_data)
 
 
