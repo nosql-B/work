@@ -25,6 +25,10 @@ public class WebsiteController {
     public ModelAndView webSite(HttpServletRequest request){
         ModelAndView modelAndView = new ModelAndView();
 
+        List<News> lists = null;
+        lists = newsService.findAll();
+        modelAndView.addObject("news",lists);
+        modelAndView.addObject("user",user);
         modelAndView.setViewName("toutiao_website");
         return modelAndView;
     }

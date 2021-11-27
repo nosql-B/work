@@ -29,7 +29,6 @@
 				<li><a href="/register">注册</a></li>
 
 
-
 				</ul>
 				</div>
 		</div>
@@ -51,17 +50,19 @@
 			</div>
 		</div>
 		<div class="col-sm-7 news-list">
+			<#list news as new>
 			<div class="news-list-item clearfix">
 				<div class="col-xs-5">
-					<img src="../pic/logo.jpg">
+					<img src="${new.image}">
 				</div>
 				<div class="col-xs-7">
-					<a class="title" href="/news"></a>
+					<a class="title" href="/news">${new.title}</a>
 					<span class="logo-sm" ><img src="../pic/logo.jpg"></span>
-					<span class="info">a</span>-<span class="info">5次阅读</span>-<span class="info">2020</span>
+					<span class="info">${new.author}</span>-<span class="info">${new.viewCount}次阅读</span>-<span class="info">${new.createdAt}</span>
 
 				</div>
 			</div>
+			</#list>
 		</div>
 
 		<div class="col-sm-3">
