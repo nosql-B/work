@@ -11,8 +11,8 @@
 		<div class="nav navbar-default">
 			<div class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand hidden-xs" href="toutiao_website.ftl"></a>
-				<a class="navbar-brand hidden visible-xs mobile-logo" href="toutiao_website.ftl"></a>
+				<a class="navbar-brand hidden-xs" href="/webSite"></a>
+				<a class="navbar-brand hidden visible-xs mobile-logo" href="/webSite"></a>
 				<span><label for="menu" class="visible-xs">MENU</label> </span>
 			</div>
 				<div class="hidden-xs">
@@ -53,4 +53,31 @@
 </body>
 <script src="../js/jquery-1.12.3.min.js"></script>
 
+<script>
+
+	function login() {//传入表单参数
+		var username = $("#username").val();
+		var password = $("#password").val();
+		$.ajax({
+			url : "/Login",
+			data : {"username":username,"password":password}, //提交表单数据
+			type : "post",
+			dataType:"json",
+			success : function(json){
+				console.log(json);
+				if(json.code == 0){ //登录校验成功
+					//跳转url
+					console.log(json.redirect_url);
+					window.location.href=json.redirect_url;
+					return false;
+				}else{
+					//显示错误信息;
+					console.log(json.msg);
+					$("#msg").html(json.msg);
+				}
+			}
+		})
+
+	}
+</script>
 </html>
