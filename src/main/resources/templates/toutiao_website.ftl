@@ -17,7 +17,7 @@
 			</div>
 				<div class="hidden-xs">
 				<ul class="nav navbar-nav">
-				<li class="active"><a href="toutiao_website.ftl" >首页</a></li>
+				<li class="active"><a href="/webSite" >首页</a></li>
 				<li><a href="">国际</a></li>
 				<li><a href="">国内</a></li>
 				<li><a href="">数读</a></li>
@@ -69,6 +69,26 @@
 				</div>
 			</div>
 			</#list>
+
+			<nav aria-label="Page navigation">
+				<ul class="pagination">
+					<li>
+						<a href="#" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+						</a>
+					</li>
+					<li><a href="/webSite/?pageNumber=1">1</a></li>
+					<li><a href="/webSite/?pageNumber=2">2</a></li>
+					<li><a href="/webSite/?pageNumber=3">3</a></li>
+					<li><a href="/webSite/?pageNumber=4">4</a></li>
+					<li><a href="/webSite/?pageNumber=5">5</a></li>
+					<li>
+						<a href="#" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
 
 		<div class="col-sm-3">

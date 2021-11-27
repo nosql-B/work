@@ -1,5 +1,7 @@
 package com.nosql.work.Controller;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.nosql.work.entity.News;
 import com.nosql.work.entity.User;
 import com.nosql.work.service.NewsService;
@@ -22,7 +24,18 @@ public class WebsiteController {
      * @return
      */
     @RequestMapping("/webSite")
-    public ModelAndView webSite(HttpServletRequest request){
+    public ModelAndView webSite(HttpServletRequest request,Integer pageNumber){
+
+        //默认为第一页
+        if (pageNumber == null){
+            pageNumber = 1;
+        }
+
+        /**
+         * 开启分页
+         */
+        PageHelper.startPage(pageNumber,5);
+
         User user = null;
         HttpSession session = request.getSession();
         user = (User) session.getAttribute("login_user");
@@ -31,6 +44,7 @@ public class WebsiteController {
 
         List<News> lists = null;
         lists = newsService.findAll();
+
         modelAndView.addObject("news",lists);
         modelAndView.addObject("user",user);
         modelAndView.setViewName("toutiao_website");
