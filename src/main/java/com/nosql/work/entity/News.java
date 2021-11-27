@@ -1,6 +1,6 @@
 package com.nosql.work.entity;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class News {
     private Integer id;
@@ -15,9 +15,9 @@ public class News {
 
     private String author;
     
-    private Integer view_count;
+    private Integer viewCount;
 
-    private Date created_at;
+    private Date createdAt;
 
     private Short isValid;
 
@@ -69,20 +69,20 @@ public class News {
         this.author = author;
     }
 
-    public Integer getview_count() {
-        return view_count;
+    public Integer getviewCount() {
+        return viewCount;
     }
 
-    public void setview_count(Integer view_count) {
-        this.view_count = view_count;
+    public void setviewCount(Integer viewCount) {
+        this.viewCount = viewCount;
     }
 
-    public Date getcreated_at() {
-        return created_at;
+    public Date getcreatedAt() {
+        return createdAt;
     }
 
-    public void setcreated_at(Date created_at) {
-        this.created_at = created_at;
+    public void setcreatedAt(Date createdAt) {
+        this.createdAt = createdAt;
     }
 
     public Short getIsValid() {
@@ -105,8 +105,8 @@ public class News {
         sb.append(", types=").append(types);
         sb.append(", image=").append(image);
         sb.append(", author=").append(author);
-        sb.append(", view_count=").append(view_count);
-        sb.append(", created_at=").append(created_at);
+        sb.append(", viewCount=").append(viewCount);
+        sb.append(", createdAt=").append(createdAt);
         sb.append(", isValid=").append(isValid);
         sb.append("]");
         return sb.toString();
