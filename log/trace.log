@@ -1,0 +1,298 @@
+2021-11-19 13:38:22.504 INFO  com.nosql.work.WorkApplication                    :55   [32m                  [0;39m Starting WorkApplication using Java 1.8.0_131 on DESKTOP-N51J6G9 with PID 19232 (G:\Java_revise\work\target\classes started by DELL in G:\Java_revise\work)
+2021-11-19 13:38:22.511 INFO  com.nosql.work.WorkApplication                    :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-19 13:38:22.695 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-19 13:38:22.697 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-19 13:38:23.832 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-11-19 13:38:23.855 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 12 ms. Found 0 MongoDB repository interfaces.
+2021-11-19 13:38:24.535 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 80 (http)
+2021-11-19 13:38:24.542 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-80"]
+2021-11-19 13:38:24.542 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-19 13:38:24.543 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-19 13:38:24.631 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-19 13:38:24.632 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1929 ms
+2021-11-19 13:38:25.230 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-11-19 13:38:25.340 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:27017
+2021-11-19 13:38:25.340 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:27017
+2021-11-19 13:38:25.340 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=63521500}
+2021-11-19 13:38:25.541 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-19 13:38:25.920 INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping     :57   [32m                  [0;39m Adding welcome page template: index
+2021-11-19 13:38:26.211 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-80"]
+2021-11-19 13:38:26.227 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 80 (http) with context path ''
+2021-11-19 13:38:26.241 INFO  com.nosql.work.WorkApplication                    :61   [32m                  [0;39m Started WorkApplication in 4.671 seconds (JVM running for 6.634)
+2021-11-19 13:38:42.383 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-19 13:38:42.383 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-19 13:38:42.384 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2021-11-19 13:38:59.721 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-11-19 13:39:00.655 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-11-19 13:42:25.696 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2021-11-19 13:42:25.720 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2021-11-19 13:42:44.056 INFO  com.nosql.work.WorkApplication                    :55   [32m                  [0;39m Starting WorkApplication using Java 1.8.0_131 on DESKTOP-N51J6G9 with PID 4760 (G:\Java_revise\work\target\classes started by DELL in G:\Java_revise\work)
+2021-11-19 13:42:44.060 INFO  com.nosql.work.WorkApplication                    :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-19 13:42:44.210 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-19 13:42:44.211 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-19 13:42:45.537 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-11-19 13:42:45.567 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 20 ms. Found 0 MongoDB repository interfaces.
+2021-11-19 13:42:46.324 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 80 (http)
+2021-11-19 13:42:46.332 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-80"]
+2021-11-19 13:42:46.333 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-19 13:42:46.333 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-19 13:42:46.437 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-19 13:42:46.438 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2227 ms
+2021-11-19 13:42:46.929 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-11-19 13:42:47.006 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:1, serverValue:4}] to localhost:27017
+2021-11-19 13:42:47.006 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:2, serverValue:3}] to localhost:27017
+2021-11-19 13:42:47.007 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=32775600}
+2021-11-19 13:42:47.182 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-19 13:42:47.559 INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping     :57   [32m                  [0;39m Adding welcome page template: index
+2021-11-19 13:42:47.924 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-80"]
+2021-11-19 13:42:47.948 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 80 (http) with context path ''
+2021-11-19 13:42:47.966 INFO  com.nosql.work.WorkApplication                    :61   [32m                  [0;39m Started WorkApplication in 5.14 seconds (JVM running for 8.046)
+2021-11-19 13:46:11.529 INFO  com.nosql.work.WorkApplication                    :55   [32m                  [0;39m Starting WorkApplication using Java 1.8.0_131 on DESKTOP-N51J6G9 with PID 18412 (G:\Java_revise\work\target\classes started by DELL in G:\Java_revise\work)
+2021-11-19 13:46:11.534 INFO  com.nosql.work.WorkApplication                    :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-19 13:46:11.656 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-19 13:46:11.658 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-19 13:46:12.782 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-11-19 13:46:12.804 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 9 ms. Found 0 MongoDB repository interfaces.
+2021-11-19 13:46:13.387 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 80 (http)
+2021-11-19 13:46:13.399 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-80"]
+2021-11-19 13:46:13.400 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-19 13:46:13.400 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-19 13:46:13.477 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-19 13:46:13.477 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1817 ms
+2021-11-19 13:46:14.011 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-11-19 13:46:14.067 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:1, serverValue:5}] to localhost:27017
+2021-11-19 13:46:14.067 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:2, serverValue:6}] to localhost:27017
+2021-11-19 13:46:14.067 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=18737100}
+2021-11-19 13:46:14.233 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-19 13:46:14.555 INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping     :57   [32m                  [0;39m Adding welcome page template: index
+2021-11-19 13:46:14.813 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-80"]
+2021-11-19 13:46:14.837 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 80 (http) with context path ''
+2021-11-19 13:46:14.845 INFO  com.nosql.work.WorkApplication                    :61   [32m                  [0;39m Started WorkApplication in 4.184 seconds (JVM running for 5.836)
+2021-11-19 13:46:25.489 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-19 13:46:25.490 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-19 13:46:25.490 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2021-11-19 13:46:28.037 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-11-19 13:46:28.618 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-11-19 14:05:26.332 INFO  com.nosql.work.WorkApplication                    :55   [32m                  [0;39m Starting WorkApplication using Java 1.8.0_131 on DESKTOP-N51J6G9 with PID 4892 (G:\Java_revise\work\target\classes started by DELL in G:\Java_revise\work)
+2021-11-19 14:05:26.333 INFO  com.nosql.work.WorkApplication                    :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-19 14:05:26.373 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-19 14:05:26.374 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-19 14:05:26.857 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-11-19 14:05:26.867 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2021-11-19 14:05:27.292 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 80 (http)
+2021-11-19 14:05:27.299 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-80"]
+2021-11-19 14:05:27.299 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-19 14:05:27.300 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-19 14:05:27.358 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-19 14:05:27.358 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 977 ms
+2021-11-19 14:05:27.716 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-11-19 14:05:27.751 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+2021-11-19 14:05:27.751 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2021-11-19 14:05:27.751 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=11684200}
+2021-11-19 14:05:27.854 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-19 14:05:28.042 INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping     :57   [32m                  [0;39m Adding welcome page template: index
+2021-11-19 14:05:28.206 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-80"]
+2021-11-19 14:05:28.218 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 80 (http) with context path ''
+2021-11-19 14:05:28.227 INFO  com.nosql.work.WorkApplication                    :61   [32m                  [0;39m Started WorkApplication in 2.379 seconds (JVM running for 3.328)
+2021-11-19 14:05:33.704 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-19 14:05:33.704 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-19 14:05:33.706 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2021-11-19 14:05:37.402 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-11-19 14:05:37.894 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-11-19 14:25:39.851 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2021-11-19 14:25:39.870 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2021-11-19 14:25:40.146 INFO  com.nosql.work.WorkApplication                    :55   [32m                  [0;39m Starting WorkApplication using Java 1.8.0_131 on DESKTOP-N51J6G9 with PID 4892 (G:\Java_revise\work\target\classes started by DELL in G:\Java_revise\work)
+2021-11-19 14:25:40.146 INFO  com.nosql.work.WorkApplication                    :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-19 14:25:40.543 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-11-19 14:25:40.554 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 9 ms. Found 0 MongoDB repository interfaces.
+2021-11-19 14:25:41.074 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 80 (http)
+2021-11-19 14:25:41.078 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-80"]
+2021-11-19 14:25:41.080 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-19 14:25:41.080 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-19 14:25:41.170 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-19 14:25:41.170 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1015 ms
+2021-11-19 14:25:41.294 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-11-19 14:25:41.306 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:3, serverValue:9}] to localhost:27017
+2021-11-19 14:25:41.310 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:4, serverValue:10}] to localhost:27017
+2021-11-19 14:25:41.312 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4982900}
+2021-11-19 14:25:41.364 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-19 14:25:41.829 INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping     :57   [32m                  [0;39m Adding welcome page template: index
+2021-11-19 14:25:42.156 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-80"]
+2021-11-19 14:25:42.162 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 80 (http) with context path ''
+2021-11-19 14:25:42.170 INFO  com.nosql.work.WorkApplication                    :61   [32m                  [0;39m Started WorkApplication in 2.089 seconds (JVM running for 1217.27)
+2021-11-19 14:25:42.171 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-19 14:25:44.348 INFO  com.nosql.work.WorkApplication                    :55   [32m                  [0;39m Starting WorkApplication using Java 1.8.0_131 on DESKTOP-N51J6G9 with PID 4892 (G:\Java_revise\work\target\classes started by DELL in G:\Java_revise\work)
+2021-11-19 14:25:44.348 INFO  com.nosql.work.WorkApplication                    :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-19 14:25:44.714 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-11-19 14:25:44.728 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 12 ms. Found 0 MongoDB repository interfaces.
+2021-11-19 14:25:44.889 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 80 (http)
+2021-11-19 14:25:44.890 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-80"]
+2021-11-19 14:25:44.890 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-19 14:25:44.890 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-19 14:25:44.924 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-19 14:25:44.925 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 573 ms
+2021-11-19 14:25:45.073 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-11-19 14:25:45.082 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:5, serverValue:11}] to localhost:27017
+2021-11-19 14:25:45.087 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3016400}
+2021-11-19 14:25:45.086 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:6, serverValue:12}] to localhost:27017
+2021-11-19 14:25:45.109 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-19 14:25:45.282 INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping     :57   [32m                  [0;39m Adding welcome page template: index
+2021-11-19 14:25:45.374 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-80"]
+2021-11-19 14:25:45.376 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 80 (http) with context path ''
+2021-11-19 14:25:45.385 INFO  com.nosql.work.WorkApplication                    :61   [32m                  [0;39m Started WorkApplication in 1.124 seconds (JVM running for 1220.486)
+2021-11-19 14:25:45.388 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-19 14:26:55.305 INFO  com.nosql.work.WorkApplication                    :55   [32m                  [0;39m Starting WorkApplication using Java 1.8.0_131 on DESKTOP-N51J6G9 with PID 14240 (G:\Java_revise\work\target\classes started by DELL in G:\Java_revise\work)
+2021-11-19 14:26:55.306 INFO  com.nosql.work.WorkApplication                    :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-19 14:26:55.385 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-19 14:26:55.385 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-19 14:26:56.555 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-11-19 14:26:56.579 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 16 ms. Found 0 MongoDB repository interfaces.
+2021-11-19 14:26:57.261 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 80 (http)
+2021-11-19 14:26:57.269 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-80"]
+2021-11-19 14:26:57.269 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-19 14:26:57.269 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-19 14:26:57.355 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-19 14:26:57.355 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1970 ms
+2021-11-19 14:26:57.899 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-11-19 14:26:57.961 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:1, serverValue:14}] to localhost:27017
+2021-11-19 14:26:57.961 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:2, serverValue:13}] to localhost:27017
+2021-11-19 14:26:57.962 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=25557300}
+2021-11-19 14:26:58.143 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-19 14:26:58.490 INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping     :57   [32m                  [0;39m Adding welcome page template: index
+2021-11-19 14:26:58.772 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-80"]
+2021-11-19 14:26:58.801 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 80 (http) with context path ''
+2021-11-19 14:26:58.820 INFO  com.nosql.work.WorkApplication                    :61   [32m                  [0;39m Started WorkApplication in 4.352 seconds (JVM running for 6.249)
+2021-11-19 14:27:04.980 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-19 14:27:04.980 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-19 14:27:04.981 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2021-11-19 14:27:12.688 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-11-19 14:27:13.177 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-11-19 14:37:24.002 INFO  com.nosql.work.WorkApplication                    :55   [32m                  [0;39m Starting WorkApplication using Java 1.8.0_131 on DESKTOP-N51J6G9 with PID 10948 (G:\Java_revise\work\target\classes started by DELL in G:\Java_revise\work)
+2021-11-19 14:37:24.003 INFO  com.nosql.work.WorkApplication                    :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-19 14:37:24.083 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-19 14:37:24.084 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-19 14:37:25.804 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-11-19 14:37:25.817 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 9 ms. Found 0 MongoDB repository interfaces.
+2021-11-19 14:37:26.618 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 80 (http)
+2021-11-19 14:37:26.634 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-80"]
+2021-11-19 14:37:26.634 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-19 14:37:26.634 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-19 14:37:26.725 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-19 14:37:26.725 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2641 ms
+2021-11-19 14:37:27.501 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-11-19 14:37:27.574 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:1, serverValue:15}] to localhost:27017
+2021-11-19 14:37:27.574 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:2, serverValue:16}] to localhost:27017
+2021-11-19 14:37:27.574 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=25722600}
+2021-11-19 14:37:27.820 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-19 14:37:28.237 INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping     :57   [32m                  [0;39m Adding welcome page template: index
+2021-11-19 14:37:28.547 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-80"]
+2021-11-19 14:37:28.562 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 80 (http) with context path ''
+2021-11-19 14:37:28.577 INFO  com.nosql.work.WorkApplication                    :61   [32m                  [0;39m Started WorkApplication in 5.56 seconds (JVM running for 7.134)
+2021-11-19 14:38:25.551 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-19 14:38:25.552 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-19 14:38:25.553 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2021-11-19 14:38:25.594 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-11-19 14:38:26.159 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-11-19 14:52:51.239 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2021-11-19 14:52:51.250 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2021-11-19 14:52:51.445 INFO  com.nosql.work.WorkApplication                    :55   [32m                  [0;39m Starting WorkApplication using Java 1.8.0_131 on DESKTOP-N51J6G9 with PID 10948 (G:\Java_revise\work\target\classes started by DELL in G:\Java_revise\work)
+2021-11-19 14:52:51.445 INFO  com.nosql.work.WorkApplication                    :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-19 14:52:51.605 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-11-19 14:52:51.608 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 2 ms. Found 0 MongoDB repository interfaces.
+2021-11-19 14:52:51.688 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 80 (http)
+2021-11-19 14:52:51.689 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-80"]
+2021-11-19 14:52:51.689 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-19 14:52:51.690 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-19 14:52:51.715 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-19 14:52:51.715 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 267 ms
+2021-11-19 14:52:51.786 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-11-19 14:52:51.790 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:4, serverValue:18}] to localhost:27017
+2021-11-19 14:52:51.790 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:3, serverValue:17}] to localhost:27017
+2021-11-19 14:52:51.791 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1478100}
+2021-11-19 14:52:51.805 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-19 14:52:51.858 INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping     :57   [32m                  [0;39m Adding welcome page template: index
+2021-11-19 14:52:51.910 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-80"]
+2021-11-19 14:52:51.911 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 80 (http) with context path ''
+2021-11-19 14:52:51.915 INFO  com.nosql.work.WorkApplication                    :61   [32m                  [0;39m Started WorkApplication in 0.495 seconds (JVM running for 930.473)
+2021-11-19 14:52:51.917 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-19 14:52:53.795 INFO  com.nosql.work.WorkApplication                    :55   [32m                  [0;39m Starting WorkApplication using Java 1.8.0_131 on DESKTOP-N51J6G9 with PID 10948 (G:\Java_revise\work\target\classes started by DELL in G:\Java_revise\work)
+2021-11-19 14:52:53.795 INFO  com.nosql.work.WorkApplication                    :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-19 14:52:53.925 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-11-19 14:52:53.927 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 2 ms. Found 0 MongoDB repository interfaces.
+2021-11-19 14:52:54.001 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 80 (http)
+2021-11-19 14:52:54.002 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-80"]
+2021-11-19 14:52:54.002 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-19 14:52:54.002 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-19 14:52:54.017 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-19 14:52:54.018 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 221 ms
+2021-11-19 14:52:54.089 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-11-19 14:52:54.092 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:6, serverValue:19}] to localhost:27017
+2021-11-19 14:52:54.092 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:5, serverValue:20}] to localhost:27017
+2021-11-19 14:52:54.093 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1137600}
+2021-11-19 14:52:54.107 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-19 14:52:54.147 INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping     :57   [32m                  [0;39m Adding welcome page template: index
+2021-11-19 14:52:54.180 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-80"]
+2021-11-19 14:52:54.181 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 80 (http) with context path ''
+2021-11-19 14:52:54.184 INFO  com.nosql.work.WorkApplication                    :61   [32m                  [0;39m Started WorkApplication in 0.421 seconds (JVM running for 932.742)
+2021-11-19 14:52:54.185 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-19 14:52:54.861 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-19 14:52:54.861 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-19 14:52:54.862 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2021-11-19 14:52:54.864 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
+2021-11-19 14:52:54.879 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
+2021-11-19 14:52:54.885 INFO  freemarker.beans                                  :65   [32m                  [0;39m Detected multiple classes with the same name, "com.nosql.work.entity.News". Assuming it was a class-reloading. Clearing class introspection caches to release old data.
+2021-11-19 14:55:20.691 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2021-11-19 14:55:20.701 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2021-11-19 14:55:20.881 INFO  com.nosql.work.WorkApplication                    :55   [32m                  [0;39m Starting WorkApplication using Java 1.8.0_131 on DESKTOP-N51J6G9 with PID 10948 (G:\Java_revise\work\target\classes started by DELL in G:\Java_revise\work)
+2021-11-19 14:55:20.882 INFO  com.nosql.work.WorkApplication                    :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-19 14:55:21.027 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-11-19 14:55:21.030 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 2 ms. Found 0 MongoDB repository interfaces.
+2021-11-19 14:55:21.094 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 80 (http)
+2021-11-19 14:55:21.094 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-80"]
+2021-11-19 14:55:21.095 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-19 14:55:21.095 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-19 14:55:21.106 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-19 14:55:21.106 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 223 ms
+2021-11-19 14:55:21.156 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-11-19 14:55:21.159 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:8, serverValue:21}] to localhost:27017
+2021-11-19 14:55:21.160 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:7, serverValue:22}] to localhost:27017
+2021-11-19 14:55:21.160 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1947400}
+2021-11-19 14:55:21.171 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-19 14:55:21.209 INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping     :57   [32m                  [0;39m Adding welcome page template: index
+2021-11-19 14:55:21.251 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-80"]
+2021-11-19 14:55:21.252 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 80 (http) with context path ''
+2021-11-19 14:55:21.258 INFO  com.nosql.work.WorkApplication                    :61   [32m                  [0;39m Started WorkApplication in 0.406 seconds (JVM running for 1079.815)
+2021-11-19 14:55:21.259 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-19 14:55:24.390 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-19 14:55:24.391 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-19 14:55:24.392 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2021-11-19 14:55:24.394 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-3 - Starting...
+2021-11-19 14:55:24.408 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-3 - Start completed.
+2021-11-19 14:55:24.416 INFO  freemarker.beans                                  :65   [32m                  [0;39m Detected multiple classes with the same name, "com.nosql.work.entity.News". Assuming it was a class-reloading. Clearing class introspection caches to release old data.
+2021-11-19 14:57:36.216 INFO  com.nosql.work.WorkApplication                    :55   [32m                  [0;39m Starting WorkApplication using Java 1.8.0_131 on DESKTOP-N51J6G9 with PID 20456 (G:\Java_revise\work\target\classes started by DELL in G:\Java_revise\work)
+2021-11-19 14:57:36.217 INFO  com.nosql.work.WorkApplication                    :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-19 14:57:36.271 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-19 14:57:36.271 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-19 14:57:36.768 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-11-19 14:57:36.778 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 7 ms. Found 0 MongoDB repository interfaces.
+2021-11-19 14:57:37.223 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 80 (http)
+2021-11-19 14:57:37.230 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-80"]
+2021-11-19 14:57:37.230 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-19 14:57:37.231 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-19 14:57:37.291 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-19 14:57:37.291 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1019 ms
+2021-11-19 14:57:37.642 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-11-19 14:57:37.686 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:2, serverValue:23}] to localhost:27017
+2021-11-19 14:57:37.686 INFO  org.mongodb.driver.connection                     :71   [32m                  [0;39m Opened connection [connectionId{localValue:1, serverValue:24}] to localhost:27017
+2021-11-19 14:57:37.686 INFO  org.mongodb.driver.cluster                        :71   [32m                  [0;39m Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=15989800}
+2021-11-19 14:57:37.815 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-19 14:57:38.020 INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping     :57   [32m                  [0;39m Adding welcome page template: index
+2021-11-19 14:57:38.192 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-80"]
+2021-11-19 14:57:38.204 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 80 (http) with context path ''
+2021-11-19 14:57:38.212 INFO  com.nosql.work.WorkApplication                    :61   [32m                  [0;39m Started WorkApplication in 2.512 seconds (JVM running for 3.427)
+2021-11-19 14:58:45.349 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-19 14:58:45.349 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-19 14:58:45.350 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2021-11-19 14:58:52.846 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-11-19 14:58:53.360 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-11-19 22:01:00.064 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7h2m6s589ms371µs300ns).
