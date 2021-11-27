@@ -24,9 +24,15 @@
 				<li><a href="">社会</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
+				<#if user??>
+					<li><a>你好,${user.username}</a></li>
+					<li><a href="/loginOut">注销</a></li>
+				</#if>
 
-				<li><a href="/login">登录</a></li>
-				<li><a href="/register">注册</a></li>
+				<#if !user??>
+					<li><a href="/login">登录</a></li>
+					<li><a href="/register">注册</a></li>
+				</#if>
 
 
 				</ul>

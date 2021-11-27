@@ -23,6 +23,10 @@ public class WebsiteController {
      */
     @RequestMapping("/webSite")
     public ModelAndView webSite(HttpServletRequest request){
+        User user = null;
+        HttpSession session = request.getSession();
+        user = (User) session.getAttribute("login_user");
+
         ModelAndView modelAndView = new ModelAndView();
 
         List<News> lists = null;
