@@ -7,20 +7,30 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.util.Date;
 
 @Document("posts")
-public class Posts {
+public class Comments {
     @Id
-    private ObjectId id;
+    private ObjectId _id;
 
+    private int id;
+    
     private String title;
     private String content;
     private Date created_at;
     private int x;
 
-    public ObjectId getId() {
+    public ObjectId get_id() {
+        return _id;
+    }
+
+    public void set_id(ObjectId _id) {
+        this._id = _id;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(ObjectId id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -58,8 +68,9 @@ public class Posts {
 
     @Override
     public String toString() {
-        return "MongoTest{" +
-                "id=" + id +
+        return "Posts{" +
+                "_id=" + _id +
+                ", id=" + id +
                 ", title='" + title + '\'' +
                 ", content='" + content + '\'' +
                 ", created_at=" + created_at +
