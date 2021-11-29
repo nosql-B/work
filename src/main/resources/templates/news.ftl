@@ -126,6 +126,7 @@
 					<div class="commentList">
 						<h3><i class="fa fa-comments-o fa-fw"></i><em>20</em>条评论~~~</h3>
 						<ul class="comment">
+							<#list comments as comment>
 							<li>
 								<div class="comment-body" id="comment-1">
 									<div class="cheader">
@@ -133,13 +134,13 @@
 											<strong>张三</strong>
 										</a>
 										<div class="timer">
-											<i class="fa fa-clock-o fa-fw"></i>2018-01-01 14:14:14
+											<i class="fa fa-clock-o fa-fw"></i>${comment.created_at?datetime}
 											<i class="fa fa-map-marker fa-fw"></i>北京市朝阳区
 										</div>
 									</div>
 									<div class="content">
-										<a href="#comment-5" class="comment-quote">@钱五</a>
-										有人在车上分娩，有人在地铁怀孕，北京真是个充满生机的城市…
+										<a href="#comment-5" class="comment-quote">${comment.title}</a>
+										${comment.content}
 									</div>
 									<div class="sign">
 										<i class="icons os-win2"></i>win8 <i class="sepa"></i>
@@ -148,6 +149,7 @@
 									</div>
 								</div>
 							</li>
+							</#list>
 						</ul>
 					</div>
 				</div>
