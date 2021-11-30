@@ -34,21 +34,89 @@
 		<h1>注册</h1>
 		<div class="form-group">
 		<label>用户名：</label>
-		<input type="text" name="" class="form-control">
+		<input type="text" id="username" class="form-control" required>
 		</div>
 		<div class="form-group">
 		<label>密码:</label>
 		<div class="form-group">
-			<input type="text" class="form-control">
+			<input type="password" class="form-control" id="password" required>
 		</div>
 		</div>
 		<div class="form-group">
 		<label>重复密码:</label>
-		<input type="password" name="" class="form-control">
+		<input type="password" name="" class="form-control" id="repeat_password" required>
+			<label><span id='msg' style="color: #c2173c"></span></label>
 		</div>
 		<div class="form-group">
-		<input type="submit" value="注册" class="btn btn-primary btn-block login-btn">
+			<input type="button" value="登录" class="btn btn-primary btn-block login-btn" onclick="isSame()"/>
 		</div>
 	</div>
 </body>
+<script src="../js/jquery-1.12.3.min.js"></script>
+<script>
+
+	function login() {//传入表单参数
+		var username = $("#username").val();
+		var password = $("#password").val();
+		$.ajax({
+			url : "/Register",
+			data : {"username":username,"password":password}, //提交表单数据
+			type : "post",
+			dataType:"json",
+			success : function(json){
+				console.log(json);
+				if(json.code == 0){ //登录校验成功
+					//跳转url
+					console.log(json.url);
+					window.location.href=json.url;
+					return false;
+				}else{
+					//显示错误信息;
+					console.log(json.msg);
+					$("#msg").html(json.msg);
+				}
+			}
+		})
+
+	}
+
+	function isSame(){
+		var username = $("#username").val();
+		var password = $("#password").val();
+		var password2 = $("#repeat_password").val();
+		console.log(username);
+		console.log(password);
+		if (password==password2){
+			register();
+		}else{
+			$("#msg").html("密码不一致,请重新输入");
+		}
+	}
+
+	function register() {//传入表单参数
+		var username = $("#username").val();
+		var password = $("#password").val();
+		var password2 = $("#repeat_password").val();
+		$.ajax({
+			url : "/Register",
+			data : {"username":username,"password":password}, //提交表单数据
+			type : "post",
+			dataType:"json",
+			success : function(json){
+				console.log(json);
+				if(json.code == 0){ //登录校验成功
+					//跳转url
+					console.log(json.url);
+					window.location.href=json.url;
+					return false;
+				}else{
+					//显示错误信息;
+					console.log(json.msg);
+					$("#msg").html(json.msg);
+				}
+			}
+		})
+
+	}
+</script>
 </html>
