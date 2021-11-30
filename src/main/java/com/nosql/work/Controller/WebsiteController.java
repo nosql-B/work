@@ -7,6 +7,8 @@ import com.nosql.work.entity.User;
 import com.nosql.work.service.NewsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -23,8 +25,8 @@ public class WebsiteController {
      * 头条页面跳转
      * @return
      */
-    @RequestMapping("/webSite")
-    public ModelAndView webSite(HttpServletRequest request,Integer pageNumber){
+    @RequestMapping({"/webSite/{pageNumber}","/webSite"})
+    public ModelAndView webSite(HttpServletRequest request,@PathVariable(required = false) Integer pageNumber){
 
         //默认为第一页
         if (pageNumber == null){
