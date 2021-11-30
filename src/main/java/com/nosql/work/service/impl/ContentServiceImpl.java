@@ -17,7 +17,7 @@ public class ContentServiceImpl implements ContentService {
 
 
     @Override
-    public List<Content> findAll(int id) {
+    public Content findAll(int id) {
         return contentMapper.findAll(id);
     }
 }

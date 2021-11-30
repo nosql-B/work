@@ -11,5 +11,5 @@ public interface ContentMapper {
      * 根据 id 查询新闻内容
      * @return
      */
-    public List<Content> findAll(int id) ;
+    public Content findAll(int id) ;
 }

@@ -1,6 +1,8 @@
 package com.nosql.work.Controller;
 
+import com.nosql.work.entity.Content;
 import com.nosql.work.entity.mongo.Comments;
+import com.nosql.work.service.ContentService;
 import com.nosql.work.service.MongoCommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.aggregation.ArrayOperators;
@@ -18,13 +20,27 @@ public class IndexController {
 
     @Autowired
     private MongoCommentService mongoCommentService;
+
+    @Autowired
+    private ContentService contentService;
+
     /**
      * 根据id跳转相关新闻页面并获取相关评论
      * @return
      */
-    @RequestMapping("/news/{id}")
-    public ModelAndView news(@PathVariable("id") Integer id){
+    @RequestMapping({"/news/{id}","/news"})
+    public ModelAndView news(@PathVariable(required = false) Integer id){
+
+        //如果没有传参id，则默认为1
+        if (id==null){
+            id = 1;
+        }
+
         ModelAndView modelAndView = new ModelAndView();
+
+        /**
+         * 获取新闻的评论内容
+         */
         List<Comments> lists = null;
         lists = mongoCommentService.findAllComments(id);
         for (Comments comment:
@@ -33,6 +49,16 @@ public class IndexController {
 
         }
         modelAndView.addObject("comments",lists);
+
+        /**
+         * 获取新闻的主体内容
+         */
+
+        Content content = null;
+        content = contentService.findAll(id);
+
+        modelAndView.addObject("content",content);
+
         modelAndView.setViewName("news");
         return modelAndView;
     }
