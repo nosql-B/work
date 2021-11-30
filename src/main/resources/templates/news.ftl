@@ -58,21 +58,15 @@
 	<div class="news">
 		<div class="container clearfix">
 		<div class="col-md-8">
-			<h1 class="news-title">十年前，他为了教育事业与高圆圆分手，而今，高圆圆说，我有一句mmp如鲠在喉。</h1>
+
+			<h1 class="news-title">${content.title}</h1>
 			<div class="news-status">15k阅读-15分钟前发布 <div class="label label-default">两性</div>
 			<div class="label label-default">情感</div></div>
 			<div class="news-body">
-				<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, consequatur tempore facere atque molestias possimus alias quos recusandae hic odio, harum quae amet maiores itaque officiis, qui iste? Eligendi, aliquam.</div>
-				<div>Delectus voluptas atque quisquam optio saepe amet, rem facere sunt, veniam ex possimus pariatur ullam dolor. Quaerat delectus facilis accusamus! Facere praesentium, consequatur sapiente. Excepturi mollitia tenetur aliquam, velit asperiores.</div>
-				<img src="../pic/2-2.jpg" alt="图片加载失败！">
-				<div>Eveniet delectus accusamus soluta quam laudantium rem ab aperiam, asperiores exercitationem minus, architecto possimus praesentium optio consequuntur in qui! Maiores qui et aperiam itaque ratione? Doloremque saepe magni, accusantium blanditiis!</div>
-				<div>Laudantium doloribus, commodi atque repellendus eaque. Magni provident, repellendus dicta rerum officia autem quia id qui quidem obcaecati, iste eveniet unde accusamus tenetur possimus, esse ipsa nihil quae ex sint?</div>
-				<div>Saepe, expedita, dolores. Atque mollitia et sit minima, architecto consequatur dolor earum accusantium reiciendis officia quia, quam fuga maiores excepturi recusandae voluptate, delectus facilis, odio eius. Quam veniam, sint id!</div>
-				<div>Aut eveniet nobis itaque vitae quae cumque. Sed quaerat aperiam incidunt, eligendi quidem placeat a fuga cum quos fugiat obcaecati ex dignissimos provident, eaque ducimus repudiandae, laborum necessitatibus mollitia omnis.</div>
-				<div>Obcaecati quod ut ex nihil veniam consectetur voluptatum quo, dolore ratione rem laborum qui consequuntur. Quod illum officiis qui deleniti autem? Ea vitae beatae quod! Amet debitis eligendi, quam iusto.</div>
-				<div>Eveniet ad eligendi fuga, accusantium dolores aut dolorem corporis velit alias dolorum voluptatibus debitis a aperiam enim impedit recusandae unde sequi blanditiis dicta et natus, mollitia, nulla repellat! Amet, corrupti.</div>
-				<div>Debitis delectus non autem, natus dolores. Facere provident pariatur illo sunt inventore, aspernatur delectus. Saepe ad mollitia quibusdam repellendus, delectus praesentium suscipit dolorum architecto eveniet. Culpa, error, cupiditate. Hic, minima.</div>
-				<div>Doloribus, assumenda animi ad labore minus officiis velit molestiae dolor quibusdam distinctio libero tenetur explicabo tempora possimus recusandae consectetur a commodi, consequatur odit! Veniam provident, debitis, nihil eligendi cum harum.</div>
+
+				<div>${content.content}</div>
+				<img src="${content.image}" alt="图片加载失败！" style="size: A3">
+				<div>${content.content}</div>
 
 <#--				评论功能-->
 				<!--弹框-->
