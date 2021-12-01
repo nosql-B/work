@@ -5,12 +5,9 @@
 	<title>登录</title>
 	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
-
 	<link href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
-
 	<!-- CSS Stylesheet -->
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-
 	<link rel="stylesheet" href="css/a.css" type="text/css" />
 
 
@@ -55,7 +52,7 @@
 
 
 
-			<li id="active"><a href="#">首页</a></li>
+			<li id="active"><a href="toutiao_website.ftl">首页</a></li>
 			<li><a href="#">国内</a></li>
 			<li><a href="#">国际</a></li>
 			<li><a href="#">军事</a></li>

@@ -17,7 +17,7 @@ a{
 
     /*margin-top: 120px;*/
 
-    background: #DCDCDC;
+    background: #01204f;
 
 }
 
@@ -57,13 +57,13 @@ a{
 
 #wrap ul>li#active{
 
-    background: #F08080;
+    background: #e60023;
 
 }
 
 #wrap ul>li>a{
 
-    color: #808080;
+    color: #fff;
 
     font-family: '微软雅黑';
 
@@ -79,7 +79,7 @@ a{
 
 #move{
 
-    background: #F08080;
+    background: #EA0C3C;
 
     height: 40px;
 
