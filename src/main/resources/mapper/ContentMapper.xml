@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nosql.work.mapper.ContentMapper">
+  <resultMap id="BaseResultMap" type="com.nosql.work.entity.Content">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="image" jdbcType="VARCHAR" property="image" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.nosql.work.entity.Content">
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+  </resultMap>
+
+  <select id="findAll" resultType="com.nosql.work.entity.Content" parameterType="integer">
+    select news.title,content.* from news,content where content.id=news.id and content.id = #{id}
+  </select>
+</mapper>

@@ -18,4 +18,6 @@ public interface NewsService {
     public List<News> findAll();
 
 
+
+    public void update(News news);
 }

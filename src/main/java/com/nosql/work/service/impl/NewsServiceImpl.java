@@ -17,4 +17,11 @@ public class NewsServiceImpl implements NewsService {
     public List<News> findAll() {
         return newsMapper.findAll();
     }
+
+    @Override
+    public void update(News news) {
+        newsMapper.update(news);
+    }
+
+
 }

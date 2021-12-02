@@ -277,5 +277,8 @@
     select * from news
   </select>
 
-
+  <update id="update" >
+    update news set title = #{title},content = #{content},types = #{types},image=#{image},author=#{author},view_count=#{viewCount}
+    where id = #{id}
+  </update>
 </mapper>

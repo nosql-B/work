@@ -29,4 +29,9 @@ public interface NewsMapper {
     int updateByPrimaryKey(News record);
 
     List<News> findAll();
+
+    /**
+     * 修改信息
+     */
+    void update(News news);
 }
