@@ -99,8 +99,15 @@
                     $element.blur(function() {
                         let index = $element.parent().data('index');
                         let tdValue = $element.html();
-                        saveData(index, field, tdValue);
-                    })
+                        let id = row.id;
+                        let title = row.title;
+                        let content = row.content;
+                        let image = row.image;
+                        let type = row.types;
+                        let author = row.author;
+                        let view_count = row.viewCount;
+                        saveData(index, field, tdValue, id,title,content,image,type,author,view_count);
+                    });
                 },
 			    //数据列
 			    columns: [{
@@ -153,13 +160,33 @@
             }
         }
 
-        function saveData(index, field, value) {
+        function saveData(index, field, value,id,title,content,image,type,author,view_count) {
             $("#table_list").bootstrapTable('updateCell', {
                 index: index,       //行索引
                 field: field,       //列名
                 value: value,        //cell值
             })
-            alert(1);
+            console.log(id);
+            $.ajax({
+                url : "/admin/news/edit",
+                data : {"key":field,"value":value,"id":id
+                ,"title":title,"content":content,"image":image,"types":type,
+                "author":author,"viewCount":view_count,
+                }, //提交表单数据
+                type : "post",
+                dataType:"json",
+
+                success : function(json){
+                    if(json.code == 0){ //登录校验成功
+                        //跳转url
+                        return false;
+                    }else{
+                        //显示错误信息;
+                        console.log(json.msg);
+                        console.log(data);
+                    }
+                }
+            })
 
         }
 
