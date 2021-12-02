@@ -196,4 +196,306 @@
     });
 </script></body><script type="text/javascript" src="//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/fisp_static/common/lib/mod_b818356.js"></script>
 
+alog("monkey.send", "pageview", { now: +new Date });
+<script type="text/javascript">require.resourceMap({"res":{"common:widget/lib/tangram/base/base.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/lib/tangram/base/base_c518988.js","pkg":"common:p0"},"common:widget/lib/magic/magic.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/lib/magic/magic_56edf31.js","pkg":"common:p0"},"common:widget/lib/magic/Base/Base.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/lib/magic/Base/Base_50a505e.js","pkg":"common:p0","deps":["common:widget/lib/tangram/base/base.js","common:widget/lib/magic/magic.js"]},"common:widget/lib/magic/control/control.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/lib/magic/control/control_5c7cfca.js","pkg":"common:p0","deps":["common:widget/lib/tangram/base/base.js","common:widget/lib/magic/magic.js"]},"common:widget/lib/magic/control/Layer/Layer.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/lib/magic/control/Layer/Layer_ccd8d01.js","pkg":"common:p0","deps":["common:widget/lib/tangram/base/base.js","common:widget/lib/magic/magic.js","common:widget/lib/magic/Base/Base.js","common:widget/lib/magic/control/control.js"]},"common:widget/lib/magic/Mask/Mask.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/lib/magic/Mask/Mask_d1105f9.js","pkg":"common:p0","deps":["common:widget/lib/tangram/base/base.js","common:widget/lib/magic/magic.js","common:widget/lib/magic/control/Layer/Layer.js"]},"common:widget/lib/magic/setup/setup.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/lib/magic/setup/setup_8207eff.js","pkg":"common:p0","deps":["common:widget/lib/tangram/base/base.js","common:widget/lib/magic/magic.js"]},"common:widget/lib/magic/_query/_query.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/lib/magic/_query/_query_a974d80.js","pkg":"common:p0","deps":["common:widget/lib/tangram/base/base.js","common:widget/lib/magic/magic.js"]},"common:widget/lib/magic/control/Tab/Tab.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/lib/magic/control/Tab/Tab_6e3b376.js","pkg":"common:p0","deps":["common:widget/lib/tangram/base/base.js","common:widget/lib/magic/magic.js","common:widget/lib/magic/Base/Base.js","common:widget/lib/magic/control/control.js","common:widget/lib/magic/_query/_query.js"]},"common:widget/lib/magic/setup/tab/tab.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/lib/magic/setup/tab/tab_7ca296e.js","pkg":"common:p0","deps":["common:widget/lib/tangram/base/base.js","common:widget/lib/magic/magic.js","common:widget/lib/magic/setup/setup.js","common:widget/lib/magic/control/Tab/Tab.js"]},"common:widget/lib/magic/control/Dialog/Dialog.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/lib/magic/control/Dialog/Dialog_c2b9c1a.js","pkg":"common:p0","deps":["common:widget/lib/tangram/base/base.js","common:widget/lib/magic/magic.js","common:widget/lib/magic/control/Layer/Layer.js"]},"common:widget/lib/magic/Background/Background.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/lib/magic/Background/Background_353ebd3.js","pkg":"common:p0","deps":["common:widget/lib/tangram/base/base.js","common:widget/lib/magic/magic.js","common:widget/lib/magic/Base/Base.js"]},"common:widget/lib/magic/Dialog/Dialog.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/lib/magic/Dialog/Dialog_239df5f.js","pkg":"common:p0","deps":["common:widget/lib/tangram/base/base.js","common:widget/lib/magic/magic.js","common:widget/lib/magic/control/Dialog/Dialog.js","common:widget/lib/magic/Background/Background.js"]},"common:widget/lib/magic/control/Dialog/$mask/$mask.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/lib/magic/control/Dialog/$mask/$mask_50466b3.js","pkg":"common:p0","deps":["common:widget/lib/tangram/base/base.js","common:widget/lib/magic/magic.js","common:widget/lib/magic/control/Dialog/Dialog.js","common:widget/lib/magic/Mask/Mask.js"]},"common:widget/ui/jquery/jquery.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/ui/jquery/jquery_5d7279d.js","pkg":"common:p1"},"common:widget/ui/jquery/jquery.cookie.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/ui/jquery/jquery.cookie_e1f1479.js","pkg":"common:p1"},"common:widget/banner_ad/banner_ad.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/banner_ad/banner_ad_5c31727.js","pkg":"common:p1","deps":["common:widget/ui/jquery/jquery.js","common:widget/ui/jquery/jquery.cookie.js"]},"common:widget/banner_ad/banner_ad_data.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/banner_ad/banner_ad_data_aff68ed.js","pkg":"common:p1"},"common:widget/dep/jQuery/plugins/jquery.lavalamp.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/dep/jQuery/plugins/jquery.lavalamp_5a9954b.js","pkg":"common:p1"},"common:widget/favorite/favorite.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/favorite/favorite_bfc0622.js","pkg":"common:p1","deps":["common:widget/ui/jquery/jquery.js","common:widget/ui/jquery/jquery.cookie.js"]},"common:widget/feedback/feedback.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/feedback/feedback_6e10548.js","pkg":"common:p1","deps":["common:widget/ui/jquery/jquery.js","common:widget/ui/jquery/jquery.cookie.js"]},"common:widget/fixedpannel/fixedpannel.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/fixedpannel/fixedpannel_bf4dc4c.js","pkg":"common:p1","deps":["common:widget/lib/tangram/base/base.js","common:widget/lib/magic/magic.js","common:widget/lib/magic/control/Layer/Layer.js","common:widget/lib/magic/Mask/Mask.js","common:widget/lib/magic/setup/tab/tab.js","common:widget/lib/magic/Dialog/Dialog.js"]},"common:widget/footer/statistics.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/footer/statistics_83e2581.js","pkg":"common:p1","deps":["common:widget/ui/jquery/jquery.js"]},"common:widget/header/header.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/header/header_c2a1ecd.js","pkg":"common:p1","deps":["common:widget/ui/jquery/jquery.js"]},"common:widget/hunter/hunter.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/hunter/hunter_2113114.js","pkg":"common:p1"},"common:widget/navbar/navbar.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/navbar/navbar_3ad387b.js","pkg":"common:p1","deps":["common:widget/dep/jQuery/plugins/jquery.lavalamp.js","common:widget/ui/jquery/jquery.js"]},"common:widget/searchbox/searchbox.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/searchbox/searchbox_21149bc.js","pkg":"common:p1","deps":["common:widget/lib/tangram/base/base.js"]},"common:widget/searchbox/searchboxActive.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/searchbox/searchboxActive_f139a7f.js","pkg":"common:p1","deps":["common:widget/ui/jquery/jquery.js"]},"common:widget/searchbox/searchradio.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/searchbox/searchradio_e67ae37.js","pkg":"common:p1","deps":["common:widget/ui/jquery/jquery.js"]},"common:widget/second_navbar/fold.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/second_navbar/fold_b1dea17.js","pkg":"common:p1","deps":["common:widget/ui/jquery/jquery.js"]},"common:widget/show_top_qrcode/show_top_qrcode.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/show_top_qrcode/show_top_qrcode_db04dfa.js","pkg":"common:p1","deps":["common:widget/ui/jquery/jquery.js"]},"common:widget/sidebar/sidebar.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/sidebar/sidebar_8df2d84.js","pkg":"common:p1","deps":["common:widget/ui/jquery/jquery.js","common:widget/feedback/feedback.js"]},"common:widget/ui/jquery/jquery-ui.min.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/ui/jquery/jquery-ui.min_793696a.js","pkg":"common:p1"},"common:widget/ui/jquery/jquery.animateEvents.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/ui/jquery/jquery.animateEvents_fa2738c.js","pkg":"common:p1"},"common:widget/ui/vs/vs.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/ui/vs/vs_ac8f6e6.js","pkg":"common:p1","deps":["common:widget/lib/tangram/base/base.js"]},"common:widget/ui/vs/observer/observer.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/ui/vs/observer/observer_7031f75.js","pkg":"common:p1"},"common:widget/ui/vs/ContentPlayer/ContentPlayer.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/ui/vs/ContentPlayer/ContentPlayer_cfa437e.js","pkg":"common:p1","deps":["common:widget/lib/tangram/base/base.js","common:widget/ui/vs/vs.js","common:widget/ui/vs/observer/observer.js"]},"common:widget/ui/vs/DynamicList/DynamicList.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/ui/vs/DynamicList/DynamicList_757360e.js","pkg":"common:p1","deps":["common:widget/lib/tangram/base/base.js","common:widget/ui/vs/vs.js","common:widget/ui/vs/observer/observer.js"]},"common:widget/ui/vs/ScrollView/ScrollView.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/ui/vs/ScrollView/ScrollView_e529192.js","pkg":"common:p1","deps":["common:widget/lib/tangram/base/base.js","common:widget/ui/vs/vs.js"]},"common:widget/ui/vs/Slide/Slide.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/ui/vs/Slide/Slide_bcb1535.js","pkg":"common:p1","deps":["common:widget/ui/jquery/jquery.js"]},"common:widget/ui/vs/citylist/citylist.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/ui/vs/citylist/citylist_39082c3.js","pkg":"common:p1"},"common:widget/ui/vs/clickMonitor/clickMonitor.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/ui/vs/clickMonitor/clickMonitor_3b94ea0.js","pkg":"common:p1","deps":["common:widget/lib/tangram/base/base.js"]},"common:widget/ui/vs/delayload/delayload.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/ui/vs/delayload/delayload_360bc2c.js","pkg":"common:p1","deps":["common:widget/lib/tangram/base/base.js"]},"common:widget/ui/vs/enterState/enterState.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/ui/vs/enterState/enterState_4f3114b.js","pkg":"common:p1","deps":["common:widget/lib/tangram/base/base.js"]},"common:widget/ui/vs/imgLazyLoad/ImglazyLoad.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/ui/vs/imgLazyLoad/ImglazyLoad_f2b8599.js","pkg":"common:p1"},"common:widget/ui/vs/slider/slider.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/ui/vs/slider/slider_32bdf45.js","pkg":"common:p1","deps":["common:widget/lib/tangram/base/base.js"]},"common:widget/ui/vs/suggestion/suggestion.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/ui/vs/suggestion/suggestion_f2b3c80.js","pkg":"common:p1","deps":["common:widget/lib/tangram/base/base.js"]},"common:widget/ui/vs/utils/utils.js":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/common/widget/ui/vs/utils/utils_73e2453.js","pkg":"common:p1"}},"pkg":{"common:p0":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/fisp_static/common/framework_static_include/framework_static_include_aa59e0d.js"},"common:p1":{"url":"//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/fisp_static/common/module_static_include/module_static_include_5309ae3.js"}}});</script><script type="text/javascript" src="//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/fisp_static/common/module_static_include/module_static_include_5309ae3.js"></script>
+<script type="text/javascript" src="//gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/static/fisp_static/common/framework_static_include/framework_static_include_aa59e0d.js"></script>
+<script type="text/javascript">!function(){	var widgetList = ['MilitaryNews', 'HotNews','LatestNews'];
+    var remainWigetList = $.extend(true, [], widgetList);
+    var widgetStatus = (function () {
+        var list = {};
+        for (var i in widgetList) {
+            list[widgetList[i]] = false;
+        }
+        return list;
+    })();
+    var widgetReferenceList = [];
+    // 保证栏目按widgetList的顺序append到#body上
+    var appendWidget = function (widgetName, widgetDom) {
+        var previousWidgetRef = null;
+        widgetReferenceList[widgetName] = $(widgetDom);
+        for (var i = 0; i < widgetList.length; i++) {
+            previousWidgetName = widgetList[i]
+            if (previousWidgetName === widgetName) {
+                break;
+            }
+            if (widgetReferenceList[previousWidgetName]) {
+                previousWidgetRef = widgetReferenceList[previousWidgetName];
+            }
+        }
+
+        if (!previousWidgetRef) {
+            nextWidgetRef = null;
+            for (var i = widgetList.length - 1; i >= 0; i--) {
+                nextWidgetName = widgetList[i]
+                if (nextWidgetName === widgetName) {
+                    break;
+                }
+                if (widgetReferenceList[nextWidgetName]) {
+                    nextWidgetRef = widgetReferenceList[nextWidgetName];
+                }
+            }
+
+            if (!nextWidgetRef) {
+                $('#col_ajax').append(widgetReferenceList[widgetName]);
+            } else {
+                nextWidgetRef.before(widgetReferenceList[widgetName]);
+            }
+        } else {
+            if (widgetName == 'LatestNews') {
+                $('#col_latest').append(widgetReferenceList[widgetName]);
+
+            } else {
+                $('#col_ajax').append(widgetReferenceList[widgetName]);
+            }
+        }
+    }
+
+    var renderWidget = function (widgetName) {
+        $.ajax({
+            url: '/widget',
+            type: 'GET',
+            dataType: 'html',
+            data: {
+                id: widgetName,
+                channel: 'guoji',
+                /*ajax: 'json',*/
+                // 时间戳，防止ie6缓存ajax请求导致第二次不请求数据
+                t: new Date().getTime()
+            },
+            timeout: 5000
+        }).done(function (data) {
+            appendWidget(widgetName, data);
+            require.async(['common:widget/lib/tangram/base/base.js', 'common:widget/ui/vs/delayload/delayload.js'],function(baidu,delayload){
+                baidu.dom.ready(function(){
+                    //图片延迟加载
+                    var delay=new delayload();
+
+                    delay.init();
+                    delay.delayLoader(1);
+                    delay.bindUI();
+                });
+            });
+        });
+    }
+    var getLoadingWidgetName = function () {
+        return remainWigetList.shift();
+    }
+    var isChrome = navigator.userAgent.indexOf("Chrome") > -1;
+    var isSafari = navigator.userAgent.indexOf("Safari") > -1;
+    window.onscroll = function () {
+        var body = $('body');
+        var height = body.height();
+        var scrollTop = 0;
+        if (isChrome || isSafari) {
+            scrollTop = $('body').scrollTop();
+        } else {
+            scrollTop = document.documentElement.scrollTop;
+        }
+        if (scrollTop > 1) {
+            widgetName = getLoadingWidgetName();
+
+            if (widgetStatus[widgetName] === false) {
+                widgetStatus[widgetName] = true;
+                renderWidget(widgetName);
+            }
+        }
+    }
+}();
+!function(){				$(function () {
+    $.ajax({
+        url: '/passport',
+        type: 'GET',
+        dataType: 'json',
+        timeout: 5000
+    }).done(function (data) {
+        var userName = '';
+        var isLogin = false;
+        if(data.errno ===0 && data.data && data.data.displayname) {
+            isLogin = true;
+            userName = data.data.displayname;
+        }
+        window['isLogin'] = isLogin;
+        require.async("common:widget/ui/vs/enterState/enterState.js", function (enterState) {
+            enterState(userName, "")
+        });
+    });
+})
+}();
+!function(){window.onbeforeunload = function(e){
+    window.scrollTo(0,0);
+}
+}();
+!function(){    require.async(['common:widget/header/header.js'],
+    function (mod) {
+        mod.init();
+    }
+);
+}();
+!function(){	require.async('common:widget/show_top_qrcode/show_top_qrcode.js', function(showqrcode) {
+    showqrcode.init();
+});
+}();
+!function(){    require.async(["common:widget/lib/tangram/base/base.js", "common:widget/searchbox/searchbox.js", "common:widget/ui/vs/suggestion/suggestion.js"], function(baidu,searchbox,suggestion){
+    baidu.dom.ready(function(){
+        searchbox.searchbox();
+        searchbox.searchnews();
+        if (navigator.cookieEnabled && !/sug?=0/.test(document.cookie)){
+            suggestion();
+        }
+    });
+});
+}();
+!function(){    require.async(['common:widget/searchbox/searchradio.js', 'common:widget/searchbox/searchboxActive.js'], function(searchRadio, searchboxActive) {
+    searchRadio();
+    searchboxActive();
+});
+}();
+!function(){require.async(['common:widget/navbar/navbar.js'],
+    function (mod) {
+        mod.init();
+    }
+);
+}();
+!function(){		require.async(['common:widget/ui/vs/clickMonitor/clickMonitor.js', 'common:widget/lib/tangram/base/base.js'], function(clickMonitor, baidu){
+    if(window.on === undefined) window.on = baidu.on;
+    clickMonitor.init('ONE_LEVEL_HOT', 'c=guoji&cy=0');
+});
+    var extraInfo = {
+        m: 11,
+        c: 'top'
+    };
+    require.async('common:widget/ui/vs/clickMonitor/clickMonitor.js', function(clickMonitor){
+        clickMonitor.init('TOP');
+    });
+    require.async(['common:widget/lib/tangram/base/base.js', 'common:widget/ui/vs/delayload/delayload.js'],function(baidu,delayload){
+        baidu.dom.ready(function(){
+            //图片延迟加载
+            var delay=new delayload();
+
+            delay.init();
+            delay.delayLoader(1);
+            delay.bindUI();
+        });
+    });
+
+    var PAGE_DATA = {
+        "guess_list_num": 0,
+        "guess_jsonp_status" : true
+    };
+}();
+!function(){    require.async(['common:widget/lib/tangram/base/base.js', 'common:widget/ui/vs/ContentPlayer/ContentPlayer.js'], function(T, I) {
+    var G = T.dom.g;
+    var on = T.event.on;
+    var imgList = [];
+    var cpOptions_1 = {
+        getBtns: function(){
+            var a, btns;
+            btns = G('imgNav').getElementsByTagName('a');
+            a = [];
+            for(var i=btns.length - 1; i>=0; i--){
+                a.push(btns[i]);
+            }
+            return a;
+        },
+        mainViewContainer: G('imgView'),
+        prevBtn: G('imgplayer-prev'),
+        nextBtn: G('imgplayer-next'),
+        changeAction: 'mouseover',
+        subViewContainer: G('imgTitle'),
+        style: {on: 'active', off: ''},
+        mainViewTpl: '<a href="#{url}" target="_blank" mon="col=carousel&pos=img&pn=#{index}"><img src="#{imgUrl}"></a>',
+        subViewTpl: '<a href="#{url}" target="_blank" mon="col=carousel&pos=title&a=9&ct=1&pn=#{index}"><strong>#{title}</strong>#{abs}</a>',
+        curIndex: 0,
+        data: [],
+        interval: 5000
+    };
+
+
+    cpOptions_1.data.push({
+        "index": 1,
+        "title": "阿富汗安全部队在多省采取行动 共打死131名塔利班成员",
+        "url": "https:\/\/3w.huanqiu.com\/a\/667415\/44BZ2qIz05e?agt=8",
+        "imgUrl": "https:\/\/b.bdstatic.com\/boxlib\/20210906\/2021090611311758588153170.jpg",
+        "abs": "当地时间2021年8月1日，阿富汗安全部队与塔利班之间的冲突仍在继续。"
+    });
+    imgList.push({"url":"https:\/\/3w.huanqiu.com\/a\/667415\/44BZ2qIz05e?agt=8"});
+    cpOptions_1.data.push({
+        "index": 2,
+        "title": "中国旅法大熊猫欢欢“昏昏欲睡”准备产仔",
+        "url": "https:\/\/3w.huanqiu.com\/a\/667415\/44BYz51pPSI?agt=8",
+        "imgUrl": "https:\/\/b.bdstatic.com\/boxlib\/20210906\/2021090611311965322020230.jpg",
+        "abs": "中国旅法大熊猫“欢欢”已经进入“昏昏欲睡的状态”，准备产仔。"
+    });
+    imgList.push({"url":"https:\/\/3w.huanqiu.com\/a\/667415\/44BYz51pPSI?agt=8"});
+    cpOptions_1.data.push({
+        "index": 3,
+        "title": "受德尔塔毒株影响 日本东京连续5天日增确诊超三千例",
+        "url": "https:\/\/3w.huanqiu.com\/a\/667415\/44BYuCm0vXp?agt=8",
+        "imgUrl": "https:\/\/b.bdstatic.com\/boxlib\/20210906\/2021090611312069366177311.jpg",
+        "abs": "东京都政府发布消息称，当地新增新冠确诊病例3058例，连续5天日增确诊超过3000例。"
+    });
+    imgList.push({"url":"https:\/\/3w.huanqiu.com\/a\/667415\/44BYuCm0vXp?agt=8"});
+
+    var index = 0 ;
+    var url = location.href.substr(location.href.indexOf("?")+1).split("&");
+    var key ;
+    for(var i = 0 ; i < url.length ; i++){
+        var tmp = url[i].split("=");
+        if(tmp&&tmp.length>0&&tmp[0]=="lb"){
+            key = tmp[1];
+        }
+    }
+    for(var p in imgList){
+        if(imgList[p].url == key){
+            index = p ;
+        }
+    }
+    cpOptions_1.curIndex = index;
+    var cp_1 = new I.Model(cpOptions_1);
+
+    on(window, 'load', function(){
+        cp_1.play(index+1);
+    });
+
+    var controlers = baidu.dom.query('#imgNav a');
+    baidu.each(controlers,function(item,i){
+        baidu.on(item,'mouseover',function(e){
+            UserMonitor.send(e, 6, {c : "guoji", col: "carousel", ct: "1", m: "11", pn: 8-i, pos : "dots", ac : "mouseover"});
+            window.alog && alog("monkey.fire", "record", {
+                type: "click",
+                target: item
+            });
+        });
+    });
+});
+}();
+!function(){require.async(['common:widget/sidebar/sidebar.js'],
+    function (Sidebar) {
+        $(function () {
+            var sidebar = new Sidebar();
+            sidebar.init();
+        });
+    }
+);
+}();
+!function(){    require.async(['common:widget/footer/statistics.js'], function (mod) {
+    // 页面加载后，向biglog发送一个pv统计，传入hostname区分产品和频道
+    mod.postReferToBiglog();
+    // 页面加载后，初始化发送往百度统计的打点
+    mod.initClickPostToTongji();
+    // 页面加载后，向百度统计发送页面的refer
+    mod.postReferToTongji();
+});
+}();
+!function(){    document.write("<img src='https://news.baidu.com/mp/b.jpg?cmd=1&class=mil&cy=0&"+Math.random()+"' style='display:none;'>");
+// <!-- document.write("<img id='cgif' src='http://ccccccc.baidu.com/c.gif?t=5&p=2&"+Math.random()+"' style='display:none'>"); -->
+
+    require.async('common:widget/lib/tangram/base/base.js', function(baidu){
+        baidu.each(baidu.dom.query('img'),function(item){
+            if(/eiv.baidu.com\/hmt\/icon/.test(baidu.dom.getAttr(item, 'src'))){
+                item.style.display = 'none';
+            }
+        });
+    });
+}();</script>
 </html>
