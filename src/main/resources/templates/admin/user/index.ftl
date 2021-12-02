@@ -105,13 +105,6 @@
 			    },{
 			        title: "内容",
 			        field: "content",
-			        // formatter: function(value, row, index) {
-                    // 	var r = "";
-                    // 	$(value).each(function (index,role){
-                    // 		r = r + "【" + role.name + "】";
-                    // 	});
-                    // 	return r;
-                    // }
 			    },{
 			        title: "类别",
 			        field: "types"
@@ -127,6 +120,9 @@
 			    },{
 			        title: "创建时间",
 			        field: "createdAt",
+                    formatter: function (value, row, index) {
+                        return changeDateFormat(value)
+                    }
 			    },
                 {
 			        title: "是否删除",
@@ -137,7 +133,17 @@
 			});
         });
 
+        //日期时间戳转datetime
+        function changeDateFormat(cellval) {
+            var dateVal = cellval + "";
+            if (cellval != null) {
+                var date = new Date(parseInt(dateVal.replace("/Date(", "").replace(")/", ""), 10));
+                var month = date.getMonth() + 1 < 10 ? "0" + (date.getMonth() + 1) : date.getMonth() + 1;
+                var currentDate = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
 
+                return date.getFullYear() + "-" + month + "-" + currentDate;
+            }
+        }
 
         
         function edit(id){
