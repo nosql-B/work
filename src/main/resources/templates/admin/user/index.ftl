@@ -94,6 +94,14 @@
                         "rows": result.data  //数据
                     }
                 },
+                onClickCell: function(field, value, row, $element) {
+                    $element.attr('contenteditable', true);
+                    $element.blur(function() {
+                        let index = $element.parent().data('index');
+                        let tdValue = $element.html();
+                        saveData(index, field, tdValue);
+                    })
+                },
 			    //数据列
 			    columns: [{
 			        title: "ID",
@@ -143,6 +151,16 @@
 
                 return date.getFullYear() + "-" + month + "-" + currentDate;
             }
+        }
+
+        function saveData(index, field, value) {
+            $("#table_list").bootstrapTable('updateCell', {
+                index: index,       //行索引
+                field: field,       //列名
+                value: value,        //cell值
+            })
+            alert(1);
+
         }
 
         
