@@ -69,6 +69,7 @@
 
     <!-- 自定义js -->
     <script src="../../assets/js/content.js?v=1.0.0"></script>
+    <script  src="https://lib.baomitu.com/limonte-sweetalert2/7.33.1/sweetalert2.all.min.js"></script>
 
     <!-- Page-Level Scripts -->
     <script>
@@ -178,9 +179,21 @@
 
                 success : function(json){
                     if(json.code == 0){ //登录校验成功
+                        //成功
+                        swal({
+                            text: "信息已提交成功！",
+                            type: "success",
+                            confirmButtonColor: '#4cd964',
+                        });
                         //跳转url
                         return false;
                     }else{
+                        //成功
+                        swal({
+                            text: "信息已提交成功！",
+                            type: "failed",
+                            confirmButtonColor: '#4cd964',
+                        });
                         //显示错误信息;
                         console.log(json.msg);
                         console.log(data);
@@ -211,7 +224,7 @@
         	      shadeClose: true,
         	      shade: false,
         	      area: ['893px', '600px'],
-        	      content: '../../admin/user/add',
+        	      content: '/admin/user/add',
         	      end: function(index){
         	    	  $('#table_list').bootstrapTable("refresh");
        	    	  }
