@@ -17,7 +17,15 @@ public interface NewsService {
      */
     public List<News> findAll();
 
-
-
+    /**
+     * 调整信息
+     * @param news
+     */
     public void update(News news);
+
+    /**
+     * 添加新闻
+     * @param news
+     */
+    public void insert(News news);
 }

@@ -23,5 +23,8 @@ public class NewsServiceImpl implements NewsService {
         newsMapper.update(news);
     }
 
+    public void insert(News news){
+        newsMapper.insert(news);
+    }
 
 }
