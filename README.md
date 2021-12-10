@@ -3,7 +3,7 @@
 ## 一、项目概括
 实现简易的新闻网站，使用Java开发，涉及mysql，redis，以及MongoDB三大主流数据库。
 ## 二、技术栈
-前端:bootstrap,Echarts,Ajax  
+前端:bootstrap,Echarts,Ajax,boostrap-table,bootstrap-fileinput,bootbox  
 前端模板引擎:freemarker  
 后端:
 1. 核心框架:Springboot
@@ -58,6 +58,14 @@
 </div>
 
 ### 3、后台管理
+行内编辑
 <div align=center>
 <img src="https://github.com/nosql-B/work/blob/main/img/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86.png" width="400px">
 </div>
+
+上传文件
+<div align=center>
+<img src="https://github.com/nosql-B/work/blob/main/img/%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6.png" width="400px">
+</div>
+
+删除新闻
