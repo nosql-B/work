@@ -140,11 +140,11 @@
                         return changeDateFormat(value)
                     }
 			    },
-                {
-			        title: "是否删除",
-			        field: "isValid",
-			        // sortable: true
-			    }
+                // {
+			    //     title: "是否删除",
+			    //     field: "isValid",
+			    //     // sortable: true
+			    // }
 			    ]
 			});
         });
@@ -203,33 +203,20 @@
 
         }
 
-        
-        function edit(id){
-        	layer.open({
-        	      type: 2,
-        	      title: '用户修改',
-        	      shadeClose: true,
-        	      shade: false,
-        	      area: ['893px', '600px'],
-        	      content: '../../admin/user/edit/' + id,
-        	      end: function(index){
-        	    	  $('#table_list').bootstrapTable("refresh");
-       	    	  }
-        	    });
-        }
         function add(){
         	layer.open({
         	      type: 2,
-        	      title: '用户添加',
+        	      title: '新闻添加',
         	      shadeClose: true,
         	      shade: false,
-        	      area: ['893px', '600px'],
-        	      content: '/admin/user/add',
+        	      area: ['893px', '500px'],
+        	      content: '/admin/news/add',
         	      end: function(index){
         	    	  $('#table_list').bootstrapTable("refresh");
        	    	  }
         	    });
         }
+
         function grant(id){
         	layer.open({
         	      type: 2,
