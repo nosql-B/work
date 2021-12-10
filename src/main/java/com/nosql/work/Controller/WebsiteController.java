@@ -66,7 +66,7 @@ public class WebsiteController {
 
         Map<String ,Object> result = new HashMap<>();
         result.put("data",newsList);
-        result.put("total",10);
+        result.put("total",newsList.size());
 
         return JSON.toJSONString(result);
     }
