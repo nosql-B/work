@@ -18,4 +18,10 @@ public interface UserService {
      * @param user
      */
     public void insert(User user);
+
+    /**
+     * 查询所有用户
+     * @return
+     */
+    public List<User> findAllUser();
 }
