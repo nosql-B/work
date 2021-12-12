@@ -35,5 +35,10 @@ public class UserServiceImpl implements UserService {
         userMapper.insert(user);
     }
 
+    @Override
+    public List<User> findAllUser() {
+        return userMapper.findAllUser();
+    }
+
 
 }
