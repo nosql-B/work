@@ -37,6 +37,10 @@ public interface MongoTestDao {
      */
     public void deleteTestById(Integer id);
 
-
+    /**
+     * 查询总评论数
+     * @return
+     */
+    public long sumComments();
 
 }
