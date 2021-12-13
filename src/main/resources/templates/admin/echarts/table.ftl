@@ -27,14 +27,14 @@
         <div class="container-fluid">
                 <div class="side-body">
                     <div class="page-title">
-                        <span class="title">Pricing Table</span>
+                        <span class="title">数据观星</span>
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="card">
                                 <div class="card-header">
                                     <div class="card-title">
-                                        <div class="title">Pricing Table Example</div>
+                                        <div class="title">数据概览</div>
                                     </div>
                                     <div class="pull-right card-action">
                                         <div class="btn-group" role="group" aria-label="...">
@@ -48,20 +48,17 @@
                                             <div class="pricing-table green">
                                                 <div class="pt-header">
                                                     <div class="plan-pricing">
-                                                        <div class="pricing">$10</div>
-                                                        <div class="pricing-type">per month</div>
+                                                        <div class="pricing">${sumViewCount}</div>
+                                                        <div class="pricing-type">昨日无变化</div>
                                                     </div>
                                                 </div>
                                                 <div class="pt-body">
-                                                    <h4>Basic Plan</h4>
+                                                    <h4>总阅读量</h4>
                                                     <ul class="plan-detail">
                                                         <li>1 Website</li>
                                                         <li>100 GB Storage</li>
                                                         <li>Unlimited Bandwidth</li>
                                                     </ul>
-                                                </div>
-                                                <div class="pt-footer">
-                                                    <button type="button" class="btn btn-success">Buy Now</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -70,20 +67,17 @@
                                             <div class="pricing-table blue">
                                                 <div class="pt-header">
                                                     <div class="plan-pricing">
-                                                        <div class="pricing">$25</div>
-                                                        <div class="pricing-type">per month</div>
+                                                        <div class="pricing">${sumNews}</div>
+                                                        <div class="pricing-type">昨日无变化</div>
                                                     </div>
                                                 </div>
                                                 <div class="pt-body">
-                                                    <h4>Standard Plan</h4>
+                                                    <h4>文章总数</h4>
                                                     <ul class="plan-detail">
                                                         <li>5 Website</li>
                                                         <li>500 GB Storage</li>
                                                         <li>Unlimited Bandwidth</li>
                                                     </ul>
-                                                </div>
-                                                <div class="pt-footer">
-                                                    <button type="button" class="btn btn-info">Buy Now</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -91,20 +85,17 @@
                                             <div class="pricing-table yellow">
                                                 <div class="pt-header">
                                                     <div class="plan-pricing">
-                                                        <div class="pricing">$50</div>
-                                                        <div class="pricing-type">per month</div>
+                                                        <div class="pricing">${sumUsers}</div>
+                                                        <div class="pricing-type">昨日无变化</div>
                                                     </div>
                                                 </div>
                                                 <div class="pt-body">
-                                                    <h4>Advanced Plan</h4>
+                                                    <h4>用户数量</h4>
                                                     <ul class="plan-detail">
                                                         <li>10 Website</li>
                                                         <li>1 TB Storage</li>
                                                         <li>Unlimited Bandwidth</li>
                                                     </ul>
-                                                </div>
-                                                <div class="pt-footer">
-                                                    <button type="button" class="btn btn-warning">Buy Now</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -112,20 +103,17 @@
                                             <div class="pricing-table red">
                                                 <div class="pt-header">
                                                     <div class="plan-pricing">
-                                                        <div class="pricing">$100</div>
-                                                        <div class="pricing-type">per month</div>
+                                                        <div class="pricing">${sumComments}</div>
+                                                        <div class="pricing-type">昨日无变化</div>
                                                     </div>
                                                 </div>
                                                 <div class="pt-body">
-                                                    <h4>Unlimited Plan</h4>
+                                                    <h4>评论数</h4>
                                                     <ul class="plan-detail">
                                                         <li>Unlimited Website</li>
                                                         <li>Unlimited Storage</li>
                                                         <li>Unlimited Bandwidth</li>
                                                     </ul>
-                                                </div>
-                                                <div class="pt-footer">
-                                                    <button type="button" class="btn btn-danger">Buy Now</button>
                                                 </div>
                                             </div>
                                         </div>

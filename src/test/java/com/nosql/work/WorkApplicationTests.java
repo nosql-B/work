@@ -49,7 +49,7 @@ class WorkApplicationTests {
     @Test
     void contextLoads() {
         for (News obj: newsService.findAll()) {
-            System.out.println(obj.toString());
+            System.out.println(obj);
         }
 
     }
@@ -110,5 +110,19 @@ class WorkApplicationTests {
     @Test
     public void testContent() {
         System.out.println(contentService.findAll(1));
+    }
+
+
+    /**
+     * 测试查询总阅读量
+     */
+    @Test
+    public void testCount(){
+        System.out.println(newsService.newsViewCount());
+    }
+
+    @Test
+    public void testSumComments(){
+        System.out.println(mongoCommentService.sumComments());
     }
 }
