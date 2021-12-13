@@ -37,4 +37,12 @@ public interface UserMapper {
 
     List<User> findAllUser();
 
+    /**
+     * 查询所有用户
+     * @return
+     */
+    int sumUser();
+
+
+
 }
