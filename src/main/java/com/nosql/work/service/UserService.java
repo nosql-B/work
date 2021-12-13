@@ -30,4 +30,10 @@ public interface UserService {
      * @return
      */
     public int sumUsers();
+
+    /**
+     * 查询三位用户
+     * @return
+     */
+    public List<User> threeUser();
 }
