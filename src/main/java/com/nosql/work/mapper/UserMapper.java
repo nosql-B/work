@@ -43,6 +43,11 @@ public interface UserMapper {
      */
     int sumUser();
 
+    /**
+     * 选择三位用户
+     * @return
+     */
+    List<User> threeUser();
 
 
 }
