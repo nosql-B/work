@@ -16,4 +16,10 @@ public interface MongoCommentService {
      */
     public List<Comments> findAllComments(int id);
 
+    /**
+     * 查询评论总数
+     * @return
+     */
+    public long sumComments();
+
 }
