@@ -187,4 +187,12 @@
     select * from user
   </select>
 
+  <select id="sumUser" resultType="integer">
+    select count(*)
+    from user;
+  </select>
+
+  <select id="threeUser" resultType="com.nosql.work.entity.User">
+    select * from user limit 0,3
+  </select>
 </mapper>
