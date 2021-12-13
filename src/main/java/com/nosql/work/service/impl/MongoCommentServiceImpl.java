@@ -18,4 +18,9 @@ public class MongoCommentServiceImpl implements MongoCommentService {
     public List<Comments> findAllComments(int id) {
         return mongoTestDao.findAllComments(id);
     }
+
+    @Override
+    public long sumComments() {
+        return mongoTestDao.sumComments();
+    }
 }
