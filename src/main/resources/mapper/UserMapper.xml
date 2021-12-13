@@ -182,4 +182,14 @@
   <select id="selectUserByName" resultType="com.nosql.work.entity.User">
     select * from user WHERE username = #{username}
   </select>
+
+  <select id="findAllUser" resultType="com.nosql.work.entity.User">
+    select * from user
+  </select>
+
+  <select id="sumUser" resultType="integer">
+    select count(*)
+    from user;
+  </select>
+
 </mapper>
