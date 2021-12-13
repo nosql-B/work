@@ -41,4 +41,10 @@ public class UserServiceImpl implements UserService {
     }
 
 
+    @Override
+    public int sumUsers() {
+        return userMapper.sumUser();
+    }
+
+
 }
