@@ -50,8 +50,6 @@ public class MongoTestDaoImpl implements MongoTestDao {
         Update update= new Update().set("title", test.getTitle()).set("content", test.getTitle());
         //更新查询返回结果集的第一条
         mongoTemplate.updateFirst(query,update, Comments.class);
-        //更新查询返回结果集的所有
-        // mongoTemplate.updateMulti(query,update,TestEntity.class);
     }
 
     /**
@@ -61,6 +59,13 @@ public class MongoTestDaoImpl implements MongoTestDao {
     public void deleteTestById(Integer id) {
         Query query = new Query(Criteria.where("id").is(id));
         mongoTemplate.remove(query, Comments.class);
+    }
+
+
+    @Override
+    public long sumComments() {
+        long count = mongoTemplate.count(new Query(),Comments.class);
+        return count;
     }
 
 }
