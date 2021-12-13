@@ -24,4 +24,10 @@ public interface UserService {
      * @return
      */
     public List<User> findAllUser();
+
+    /**
+     * 查询用户数量
+     * @return
+     */
+    public int sumUsers();
 }
