@@ -28,4 +28,16 @@ public interface NewsService {
      * @param news
      */
     public void insert(News news);
+
+    /**
+     * 根据id删除新闻
+     * @param id
+     */
+    public void delete(int id);
+
+    /**
+     * 查询总信息数
+     * @return
+     */
+    public int newsCount();
 }
