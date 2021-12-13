@@ -1,0 +1,112 @@
+# --*--coding:utf-8 --*--
+__author__ = 'Administrator'
+
+import requests
+import traceback
+from bs4 import BeautifulSoup
+import json
+from lxml import etree
+import threading
+import threadpool
+import MySQLdb
+import hashlib
+import redis
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
+# 解决警告问题
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+
+CONSTROCT = {
+	'dianzan':'点赞数',
+	'content':'评论',
+}
+
+class News(object):
+
+	def __init__(self,headers):
+		self.headers = headers
+		self.lock = threading.RLock()
+		self.s = requests.Session()
+
+	def Requests(self,urls,headers=None,data=None):
+		try:
+			if data:
+				req = self.s.post(urls,headers=headers,data=data,verify=False,timeout=30)
+				return req
+			else:
+				req = self.s.get(urls,headers=headers,verify=False,timeout=30)
+				return req
+		except:
+			s = traceback.format_exc()
+			print s
+
+	def interface(self,data):
+		"""
+		:return:
+		0 成功
+		1 失败
+		"""
+		req = self.Requests('http://jjr.dev.haodai.net/article/create',data=data)
+		res = json.loads(req.text)
+		code = res.get('code')
+		return code
+
+	def gettitle(self,res):
+		soup = BeautifulSoup(res,"lxml")
+		title = soup.title.string
+		return title
+
+	def getcontent(self,res):
+		soup = BeautifulSoup(res,"lxml")
+		content = soup.p
+		return content
+
+	def geturl(self,res,xpaths):
+		content = res.xpath(xpaths)
+		return content
+
+	def getfrom_source(self,res,xpaths):
+		content = res.xpath(xpaths)
+		return content
+
+
+	def proxy(self):
+		url = 'http://www.nianshao.me/?page=1'
+		req = requests.get(url,verify=False,timeout=30)
+		res = etree.HTML(req.content)
+		text = res.xpath('//table[@class="table"]/tbody/tr')
+		proxies = []
+		for t in text:
+			ip = t.xpath('./td[1]/text()')[0]
+			port = t.xpath('./td[2]/text()')[0]
+			pxy = ip+':'+port
+			proxies.append(pxy)
+		return proxies
+
+def operatemysql(url):
+	m1 = hashlib.md5()
+	m1.update(url)
+	m2 = m1.hexdigest()
+	conn = MySQLdb.connect(host="localhost",user="root",passwd="123456",db="test",charset="utf8")
+	cursor = conn.cursor()
+	sql = "INSERT INTO News(md5) VALUES ('%s')"%m2
+	cursor.execute(sql)
+	conn.close()
+
+class RedisUtils(object):
+
+	def __init__(self):
+		self.r = redis.Redis(host="127.0.0.1",port=6379,db=0)
+		# self.r.set("foo1","bar")
+
+	def rpush(self, key, value):
+		return self.r.rpush(key, value)
+
+	def set(self, key, value):
+		return self.r.set(key, value)
+
+	def blpop(self, key, t):
+		return self.r.blpop(key,timeout=t)
