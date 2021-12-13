@@ -46,5 +46,10 @@ public class UserServiceImpl implements UserService {
         return userMapper.sumUser();
     }
 
+    @Override
+    public List<User> threeUser() {
+        return userMapper.threeUser();
+    }
+
 
 }
