@@ -17,17 +17,18 @@
 </head>
 <body>
 
-<div class="a1">
-    <ul>
-        <li><a href="/login">登录</a></li>
-        <li><a href="/register">注册</a></li>
-    </ul>
-</div>
+
 
 <div id="wrap">
     <nav>
 
         <ul id="content">
+            <div class="a1">
+                <ul>
+                    <li><a href="/login">登录</a></li>
+                    <li><a href="/register">注册</a></li>
+                </ul>
+            </div>
             <li><a href="#">首页</a></li>
             <li><a>国内</a></li>
             <li id="active"><a href="#">国际</a></li>
@@ -48,7 +49,7 @@
     <!--</div>&lt;!&ndash; /.container-fluid &ndash;&gt;-->
 <!--</nav>-->
 
-<img src="../static/pic/bg.jpg" class="index-bg">
+<img src="../static/pic/33.jpg" class="index-bg">
 <div class="container">
 
     <h4></h4>
