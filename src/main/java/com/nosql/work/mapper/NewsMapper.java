@@ -34,4 +34,10 @@ public interface NewsMapper {
      * 修改信息
      */
     void update(News news);
+
+    /**
+     * 查询总文章数
+     * @return
+     */
+    int newsCount();
 }
