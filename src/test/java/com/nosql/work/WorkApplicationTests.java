@@ -3,8 +3,10 @@ package com.nosql.work;
 import com.nosql.work.entity.Content;
 import com.nosql.work.entity.News;
 import com.nosql.work.entity.mongo.Comments;
+import com.nosql.work.entity.redis.RedisComment;
 import com.nosql.work.mapper.NewsMapper;
 import com.nosql.work.mongoDao.impl.MongoTestDaoImpl;
+import com.nosql.work.redisDao.RedisNews;
 import com.nosql.work.service.ContentService;
 import com.nosql.work.service.MongoCommentService;
 import com.nosql.work.service.NewsService;
@@ -19,6 +21,7 @@ import javax.annotation.Resource;
 import java.util.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.TimeZone;
 
@@ -124,5 +127,53 @@ class WorkApplicationTests {
     @Test
     public void testSumComments(){
         System.out.println(mongoCommentService.sumComments());
+    }
+
+    @Resource
+    private RedisNews redisNews;
+
+    /**
+     * 测试添加redis
+     */
+    @Test
+    public void redisTest(){
+        RedisComment redisComment = new RedisComment();
+        redisComment.setId(1);
+        redisComment.setComment("元宇宙到底有多火");
+        redisComment.setViewCount(100);
+        redisComment.setCommentTimes(10);
+        redisNews.addRedisComment(redisComment);
+    }
+
+    /**
+     * 测试添加redis
+     */
+    @Test
+    public void redisTest2(){
+        RedisComment redisComment = new RedisComment();
+        redisComment.setId(1);
+        redisComment.setComment("元宇宙到底有多火");
+        redisComment.setViewCount(100);
+        redisComment.setCommentTimes(10);
+
+        RedisComment redisComment2 = new RedisComment();
+        redisComment2.setId(2);
+        redisComment2.setComment("python必备知识");
+        redisComment2.setViewCount(10);
+        redisComment2.setCommentTimes(3);
+
+        List<RedisComment> list = new LinkedList<>();
+        list.add(redisComment);
+        list.add(redisComment2);
+        redisNews.addList(list);
+    }
+
+    @Test
+    public void redisFind(){
+
+        List<RedisComment> redisComments = redisNews.redisFindAll();
+        for (RedisComment r:redisComments) {
+            System.out.println(r.toString());
+        }
     }
 }
