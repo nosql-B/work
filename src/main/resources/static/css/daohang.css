@@ -1,0 +1,115 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+#daohang {
+    position        : relative;
+    height          : 40px;
+    width           : 100%;
+    background      : #01204f;
+    box-shadow      : 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+#daohang_left a {
+    position   : relative;
+    display    : block;
+    float      : left;
+    font-family: '微软雅黑';
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    height             : 40px;
+    text-transform     : uppercase;
+    text-decoration    : none;
+    text-align         : center;
+    z-index            : 10;
+}
+#daohang_right a {
+    position   : relative;
+    display    : block;
+    float      : right;
+    font-family: '微软雅黑';
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    height             : 40px;
+    text-transform     : uppercase;
+    text-decoration    : none;
+    text-align         : center;
+    z-index            : 10;
+}
+
+#daohang_left a:nth-child(1) {
+    width: 100px;
+}
+
+#daohang_left a:nth-child(2) {
+    width: 100px;
+}
+
+#daohang_left a:nth-child(3) {
+    width: 100px;
+}
+
+#daohang_left a:nth-child(4) {
+    width: 100px;
+}
+
+#daohang_left a:nth-child(5) {
+    width: 100px;
+}
+
+#daohang_right a:nth-child(1) {
+    width: 70px;
+}
+#daohang_right a:nth-child(2) {
+    width: 70px;
+}
+#daohang .animation {
+    position        : absolute;
+    height          : 100%;
+    background-color: #e60023;
+    z-index         : 9;
+    border-radius   : 8px;
+    transition: all 0.3s;
+}
+
+.start-1,
+#daohang_left a:nth-child(1):hover~.animation {
+    width: 100px;
+    left : 0px;
+}
+.start-2,
+#daohang_left a:nth-child(2):hover~.animation {
+    width: 100px;
+    left : 100px;
+}
+.start-3,
+#daohang_left a:nth-child(3):hover~.animation {
+    width: 100px;
+    left : 200px;
+}
+.start-4,
+#daohang_left a:nth-child(4):hover~.animation {
+    width: 100px;
+    left : 300px;
+}
+.start-5,
+#daohang_left a:nth-child(5):hover~.animation {
+    width: 100px;
+    left : 400px;
+}
+
+.start-login,
+#daohang_right a:nth-child(1):hover~.animation {
+    width: 70px;
+    right: 0px;
+}
+
+.start-regist,
+#daohang_right a:nth-child(2):hover~.animation {
+    width: 70px;
+    right: 70px;
+}
