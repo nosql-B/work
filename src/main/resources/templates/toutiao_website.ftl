@@ -11,14 +11,14 @@
 		<div class="nav navbar-default">
 			<div class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand hidden-xs" href="toutiao_website.ftl"></a>
-				<a class="navbar-brand hidden visible-xs mobile-logo" href="toutiao_website.ftl"></a>
+				<a class="navbar-brand hidden-xs" href="/webSite"></a>
+				<a class="navbar-brand hidden visible-xs mobile-logo" href="/webSite"></a>
 				<span><label for="menu" class="visible-xs">MENU</label> </span>
 			</div>
 				<div class="hidden-xs">
 				<ul class="nav navbar-nav">
 				<li class="active"><a href="/webSite" >首页</a></li>
-				<li><a href="">国际</a></li>
+				<li><a href="/guoji">国际</a></li>
 				<li><a href="">国内</a></li>
 				<li><a href="">数读</a></li>
 				<li><a href="">社会</a></li>
@@ -106,42 +106,12 @@
 			<div class="side-bar">
 				<div class="side-bar-title">24小时热闻</div>
 				<div class="side-bar-body">
-					<div class="side-bar-item">
-					<a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div>
-					</div>
-					<div class="side-bar-item">
-					<a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div>
-					</div>
-					<div class="side-bar-item">
-					<a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div>
-					</div>
-					<div class="side-bar-item">
-					<a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div>
-					</div>
-					<div class="side-bar-item">
-					<a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div>
-					</div>
-					<div class="side-bar-item">
-					<a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div>
-					</div>
-					<div class="side-bar-item">
-					<a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div>
-					</div>
-					<div class="side-bar-item">
-					<a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div>
-					</div>
-					<div class="side-bar-item">
-					<a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div>
-					</div>
+					<#list redisList as redis>
+						<div class="side-bar-item">
+							<a class="article-title" href="#">${redis.comment}</a>
+							<div class="info">${redis.viewCount}阅读-${redis.commentTimes}评论</div>
+						</div>
+					</#list>
 				</div>
 			</div>
 		</div>

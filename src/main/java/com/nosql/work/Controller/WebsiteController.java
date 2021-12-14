@@ -5,6 +5,8 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.nosql.work.entity.News;
 import com.nosql.work.entity.User;
+import com.nosql.work.entity.redis.RedisComment;
+import com.nosql.work.redisDao.RedisNews;
 import com.nosql.work.service.NewsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
@@ -24,6 +27,9 @@ public class WebsiteController {
 
     @Autowired
     private NewsService newsService;
+
+    @Resource
+    private RedisNews redisNews;
 
     /**
      * 头条页面跳转
@@ -51,8 +57,10 @@ public class WebsiteController {
         List<News> lists = null;
         lists = newsService.findAll();
 
+        List<RedisComment> redisComments = redisNews.redisFindAll();
         modelAndView.addObject("news",lists);
         modelAndView.addObject("user",user);
+        modelAndView.addObject("redisList",redisComments);
         modelAndView.setViewName("toutiao_website");
         return modelAndView;
     }

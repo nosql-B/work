@@ -55,9 +55,10 @@
                                                 <div class="pt-body">
                                                     <h4>总阅读量</h4>
                                                     <ul class="plan-detail">
-                                                        <li>1 Website</li>
-                                                        <li>100 GB Storage</li>
-                                                        <li>Unlimited Bandwidth</li>
+                                                        <li>热门文章</li>
+                                                        <#list newsList as new>
+                                                            <li>${new.title}</li>
+                                                        </#list>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -75,8 +76,10 @@
                                                     <h4>文章总数</h4>
                                                     <ul class="plan-detail">
                                                         <li>5 Website</li>
+                                                        <li>5 Website</li>
                                                         <li>500 GB Storage</li>
                                                         <li>Unlimited Bandwidth</li>
+
                                                     </ul>
                                                 </div>
                                             </div>
@@ -92,9 +95,10 @@
                                                 <div class="pt-body">
                                                     <h4>用户数量</h4>
                                                     <ul class="plan-detail">
-                                                        <li>10 Website</li>
-                                                        <li>1 TB Storage</li>
-                                                        <li>Unlimited Bandwidth</li>
+                                                        <li>活跃用户</li>
+                                                        <#list userList as user>
+                                                            <li>${user.username}</li>
+                                                        </#list>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -110,9 +114,11 @@
                                                 <div class="pt-body">
                                                     <h4>评论数</h4>
                                                     <ul class="plan-detail">
-                                                        <li>Unlimited Website</li>
-                                                        <li>Unlimited Storage</li>
-                                                        <li>Unlimited Bandwidth</li>
+                                                        <li>热门评论</li>
+                                                        <#list commentsList as comment>
+                                                            <li>${comment.content}</li>
+                                                        </#list>
+                                                        <li>欢迎来到对口</li>
                                                     </ul>
                                                 </div>
                                             </div>

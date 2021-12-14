@@ -1,9 +1,13 @@
 package com.nosql.work.Controller;
 
 import com.nosql.work.entity.Content;
+import com.nosql.work.entity.News;
 import com.nosql.work.entity.mongo.Comments;
+import com.nosql.work.entity.redis.RedisComment;
+import com.nosql.work.redisDao.RedisNews;
 import com.nosql.work.service.ContentService;
 import com.nosql.work.service.MongoCommentService;
+import com.nosql.work.service.NewsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.aggregation.ArrayOperators;
 import org.springframework.stereotype.Controller;
@@ -23,6 +27,12 @@ public class IndexController {
 
     @Autowired
     private ContentService contentService;
+
+    @Autowired
+    private RedisNews redisNews;
+
+    @Autowired
+    private NewsService newsService;
 
     /**
      * 根据id跳转相关新闻页面并获取相关评论
@@ -48,7 +58,16 @@ public class IndexController {
             Calendar calendar = Calendar.getInstance();
 
         }
+
+        List<RedisComment> redisComments = redisNews.redisFindAll();
+
+        List<News> newsList = newsService.findAll();
+
         modelAndView.addObject("comments",lists);
+
+        modelAndView.addObject("redisComments",redisComments);
+
+        modelAndView.addObject("newList",newsList);
 
         /**
          * 获取新闻的主体内容
@@ -62,6 +81,7 @@ public class IndexController {
         modelAndView.setViewName("news");
         return modelAndView;
     }
+
 
 
     @RequestMapping("/index")

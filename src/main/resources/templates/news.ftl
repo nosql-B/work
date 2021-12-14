@@ -155,78 +155,26 @@
 		<div class="side-bar">
 			<div class="side-bar-title side-bar-title-news">相关推荐</div>	
 			<div class="side-bar-body">
-				<div class="side-bar-item clearfix side-bar-item-news">
-					<div class="col-xs-5"><img src="../pic/2-1.jpg" alt=""></div>
-					<div class="col-xs-7"><a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div></div>
-				</div>
-				<div class="side-bar-item clearfix side-bar-item-news">
-					<div class="col-xs-5"><img src="../pic/2-1.jpg" alt=""></div>
-					<div class="col-xs-7"><a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div></div>
-				</div>
-				<div class="side-bar-item clearfix side-bar-item-news">
-					<div class="col-xs-5"><img src="../pic/2-1.jpg" alt=""></div>
-					<div class="col-xs-7"><a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div></div>
-				</div>
-				<div class="side-bar-item clearfix side-bar-item-news">
-					<div class="col-xs-5"><img src="../pic/2-1.jpg" alt=""></div>
-					<div class="col-xs-7"><a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div></div>
-				</div>
-				<div class="side-bar-item clearfix side-bar-item-news">
-					<div class="col-xs-5"><img src="../pic/2-1.jpg" alt=""></div>
-					<div class="col-xs-7"><a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div></div>
-				</div>
-				<div class="side-bar-item clearfix side-bar-item-news">
-					<div class="col-xs-5"><img src="../pic/2-1.jpg" alt=""></div>
-					<div class="col-xs-7"><a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div></div>
-				</div>
+				<#list newList as new>
+					<div class="side-bar-item clearfix side-bar-item-news">
+						<div class="col-xs-5"><img src=${new.image} alt=""></div>
+						<div class="col-xs-7"><a class="article-title" href="#">${new.title}</a>
+							<div class="info">${new.viewCount}阅读-1k评论</div></div>
+					</div>
+				</#list>
 			</div>
 			</div>
 
 			<div class="side-bar">
 				<div class="side-bar-title">24小时热闻</div>
 				<div class="side-bar-body">
-					<div class="side-bar-item">
-					<a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div>
-					</div>
-					<div class="side-bar-item">
-					<a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div>
-					</div>
-					<div class="side-bar-item">
-					<a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div>
-					</div>
-					<div class="side-bar-item">
-					<a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div>
-					</div>
-					<div class="side-bar-item">
-					<a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div>
-					</div>
-					<div class="side-bar-item">
-					<a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div>
-					</div>
-					<div class="side-bar-item">
-					<a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div>
-					</div>
-					<div class="side-bar-item">
-					<a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div>
-					</div>
-					<div class="side-bar-item">
-					<a class="article-title" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					<div class="info">15k阅读-1k评论</div>
-					</div>
+					<#list redisComments as redis>
+						<div class="side-bar-item">
+							<a class="article-title" href="#">${redis.comment}</a>
+							<div class="info">${redis.viewCount}阅读-${redis.commentTimes}评论</div>
+						</div>
+					</#list>
+
 				</div>
 			</div>
 		</div>

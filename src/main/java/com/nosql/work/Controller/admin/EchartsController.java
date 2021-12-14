@@ -1,5 +1,8 @@
 package com.nosql.work.Controller.admin;
 
+import com.nosql.work.entity.News;
+import com.nosql.work.entity.User;
+import com.nosql.work.entity.mongo.Comments;
 import com.nosql.work.service.MongoCommentService;
 import com.nosql.work.service.NewsService;
 import com.nosql.work.service.UserService;
@@ -8,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @Controller
 public class EchartsController {
@@ -37,10 +41,20 @@ public class EchartsController {
 
         long sumComments = mongoCommentService.sumComments();
 
+        List<News> newsList = newsService.threeCountNews();
+
+        List<User> userList = userService.threeUser();
+
+        List<Comments> commentsList = mongoCommentService.findAllComments(1);
+
         modelAndView.addObject("sumNews",sumNews);
         modelAndView.addObject("sumViewCount",sumViewCount);
         modelAndView.addObject("sumUsers",sumUsers);
         modelAndView.addObject("sumComments",sumComments);
+        modelAndView.addObject("newsList",newsList);
+        modelAndView.addObject("userList",userList);
+        modelAndView.addObject("commentsList",commentsList);
+
         //添加返回的页面
         modelAndView.setViewName("/admin/echarts/table");
 

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 @Component
 public class RedisNewsImpl implements RedisNews {
@@ -32,6 +33,6 @@ public class RedisNewsImpl implements RedisNews {
 
     public void addList(List<RedisComment> list){
         String json = JSON.toJSONString(list);//转json
-        redisTemplate.opsForValue().set("comments",json);//存放
+        redisTemplate.opsForValue().set("comments",json,60*10, TimeUnit.DAYS);//存放
     }
 }

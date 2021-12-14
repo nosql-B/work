@@ -286,4 +286,12 @@
   <select id="newsCount" resultType="integer">
     select count(*) from news
   </select>
+
+  <select id="newsViewCount" resultType="long">
+    select sum(view_count) from news
+  </select>
+
+  <select id="threeCountNews" resultType="com.nosql.work.entity.News">
+    select * from news order by view_count desc limit 0,3
+  </select>
 </mapper>
