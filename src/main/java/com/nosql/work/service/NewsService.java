@@ -40,4 +40,16 @@ public interface NewsService {
      * @return
      */
     public int newsCount();
+
+    /**
+     * 查询总阅读量
+     * @return
+     */
+    public long newsViewCount();
+
+    /**
+     * 查询点赞数前三的文章
+     * @return
+     */
+    List<News> threeCountNews();
 }
