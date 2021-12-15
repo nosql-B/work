@@ -40,4 +40,16 @@ public interface NewsMapper {
      * @return
      */
     int newsCount();
+
+
+    /**
+     * 查询总阅读量
+     */
+    long newsViewCount();
+
+    /**
+     * 选出点赞数最多的三篇文章
+     * @return
+     */
+    List<News> threeCountNews();
 }
