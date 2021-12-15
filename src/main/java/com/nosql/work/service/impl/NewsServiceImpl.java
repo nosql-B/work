@@ -37,4 +37,14 @@ public class NewsServiceImpl implements NewsService {
         return newsMapper.newsCount();
     }
 
+    @Override
+    public long newsViewCount() {
+        return newsMapper.newsViewCount();
+    }
+
+    @Override
+    public List<News> threeCountNews() {
+        return newsMapper.threeCountNews();
+    }
+
 }
