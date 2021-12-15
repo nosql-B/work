@@ -14,7 +14,20 @@ public interface RedisNews {
      */
     public void addRedisComment(RedisComment redisComment);
 
+    /**
+     * 查询所有24小时热评
+     * @return
+     */
     public List<RedisComment> redisFindAll();
 
+    /**
+     * 实现添加热评功能
+     * @param list
+     */
     public void addList(List<RedisComment> list);
+
+    /**
+     * 删除热评
+     */
+    public void delete(String key);
 }
