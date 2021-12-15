@@ -35,4 +35,9 @@ public class RedisNewsImpl implements RedisNews {
         String json = JSON.toJSONString(list);//转json
         redisTemplate.opsForValue().set("comments",json,60*10, TimeUnit.DAYS);//存放
     }
+
+    @Override
+    public void delete(String key) {
+        redisTemplate.delete(key);
+    }
 }
